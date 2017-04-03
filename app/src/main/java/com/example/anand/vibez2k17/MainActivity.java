@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.digits.sdk.android.AuthCallback;
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build());
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference phonelistref = database.getReference("phonenumbers");
+
 
         setContentView(R.layout.activity_main);
 
