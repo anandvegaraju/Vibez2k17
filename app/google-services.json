@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "741614968471",
+    "firebase_url": "https://vibez-2k17.firebaseio.com",
+    "project_id": "vibez-2k17",
+    "storage_bucket": "vibez-2k17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:741614968471:android:18add8ba33cd63bc",
+        "android_client_info": {
+          "package_name": "com.example.anand.vibez2k17"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "741614968471-uiclkmmbh445i5hbrkv33hddsv976rvs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anand.vibez2k17",
+            "certificate_hash": "f9505350dbff1394f44b3bc797a47b75f35f8f07"
+          }
+        },
+        {
+          "client_id": "741614968471-1bbdd7bgss2287ifglpsg08dpf4j959m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAd51f7G_Vs8OYelIGZuZdifFUb4WgjaJ4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "741614968471-1bbdd7bgss2287ifglpsg08dpf4j959m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
