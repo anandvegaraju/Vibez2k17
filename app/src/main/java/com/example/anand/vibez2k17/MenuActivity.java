@@ -5,7 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 /**
- * Created by Acer on 03-04-2017.
+ * Created by Anand on 03-04-2017.
  */
 
 public class MenuActivity extends AppCompatActivity {
