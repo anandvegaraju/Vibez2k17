@@ -3,9 +3,13 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/greetingtext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="The main menu will be displayed here"
-        android:textSize="30sp" />
+        android:fontFamily="cursive"
+        android:text="Welcome"
+        android:textAlignment="center"
+        android:textColor="@color/dgts__text_dark"
+        android:textSize="33sp"
+        android:textStyle="bold" />
 </ScrollView>
