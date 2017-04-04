@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.digits.sdk.android.AuthCallback;
@@ -28,20 +27,26 @@ public class MainActivity extends AppCompatActivity {
     private static final String TWITTER_SECRET = "UpwPTv7np3CQSDIC2OeWAaJ4r1Ij9nmLe6oU7JpuqJsZx9AHLT";
 
 
-
+    String numlist;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TwitterAuthConfig authConfig = new TwitterAuthConfig(TWITTER_KEY, TWITTER_SECRET);
         Digits.Builder digitsBuilder = new Digits.Builder().withTheme(R.style.CustomDigitsTheme);
         Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build());
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference phonelistref = database.getReference("phonenumbers");
+        String name, gender, email, college, dept;
+
+
+
 
 
         setContentView(R.layout.activity_main);
 
-        DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button);
+        DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button2);
+        digitsButton.setText("Register using Phone Number");
+        digitsButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
         digitsButton.setCallback(new AuthCallback() {
             @Override
             public void success(DigitsSession session, final String phoneNumber) {
@@ -51,11 +56,9 @@ public class MainActivity extends AppCompatActivity {
                         new ValueEventListener() {
                             @Override
                             public void onDataChange(DataSnapshot dataSnapshot) {
-                                String numlist = dataSnapshot.getValue(String.class);
+                                numlist = dataSnapshot.getValue(String.class);
                                 if(numlist.contains(phoneNumber)){
-                                    Intent gotomenu = new Intent(MainActivity.this,MenuActivity.class);
-                                    gotomenu.putExtra("phonenumber",phoneNumber);
-                                    startActivity(gotomenu);
+                                    Toast.makeText(getApplicationContext(),"Already Registered",Toast.LENGTH_SHORT).show();
                                 }
                                 else {
                                     Intent regintent = new Intent(MainActivity.this,UserRegistrationActivity.class);
@@ -82,6 +85,26 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("Digits", "Sign in with Digits failure", exception);
             }
         });
+
+        DigitsAuthButton digitsAuthButton2 = (DigitsAuthButton)findViewById(R.id.auth_button);
+        digitsAuthButton2.setText("Login using Phone Number");
+        digitsAuthButton2.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
+        digitsAuthButton2.setCallback(
+                new AuthCallback() {
+                    @Override
+                    public void success(DigitsSession session, String phoneNumber) {
+                        Intent gotomainmenu = new Intent(MainActivity.this,MainMenu.class);
+                        gotomainmenu.putExtra("phonenumber",phoneNumber);
+                        startActivity(gotomainmenu);
+
+                    }
+
+                    @Override
+                    public void failure(DigitsException error) {
+
+                    }
+                }
+        );
 
     }
 }

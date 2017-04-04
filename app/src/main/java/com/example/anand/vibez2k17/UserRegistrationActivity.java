@@ -73,7 +73,7 @@ public class UserRegistrationActivity extends AppCompatActivity {
                                 gotomenu.putExtra("college",collegetext);
                                 gotomenu.putExtra("dept",depttext);
                                 gotomenu.putExtra("gender",gendertext);
-                                gotomenu.putExtra("callfrom","regclass");
+                                gotomenu.putExtra("registered","false");
                                 startActivity(gotomenu);
 
 

@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
-        android:text="Welcome"
+        android:text="Please wait"
         android:textAlignment="center"
         android:textColor="@color/dgts__text_dark"
         android:textSize="33sp"
