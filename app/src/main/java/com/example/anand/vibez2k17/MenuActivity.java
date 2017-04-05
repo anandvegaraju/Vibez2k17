@@ -37,7 +37,7 @@ public class MenuActivity extends AppCompatActivity {
 
         nametext = i.getStringExtra("name");
         phonenumber = i.getStringExtra("phonenumber");
-        userref = database.getReference("registeredusers").child(phonenumber);
+        userref = database.getReference(phonenumber);
 
         gendertext = i.getStringExtra("gender");
         collegetext = i.getStringExtra("college");
@@ -77,6 +77,7 @@ public class MenuActivity extends AppCompatActivity {
             );
 
         Intent gotomain = new Intent(MenuActivity.this,MainActivity.class);
+        Toast.makeText(getApplicationContext(),"Updating to db",Toast.LENGTH_LONG).show();
         startActivity(gotomain);
 
 

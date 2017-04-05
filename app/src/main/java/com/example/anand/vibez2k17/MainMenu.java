@@ -28,12 +28,30 @@ public class MainMenu extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainmenu_layout);
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
         viewPager = (ViewPager)findViewById(R.id.viewPager1);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
 
         viewPager.setAdapter(viewPagerAdapter);
         Intent intent = getIntent();
         phonenumber = intent.getStringExtra("phonenumber");
+
+        DatabaseReference nameref = database.getReference(phonenumber).child("name");
+        nameref.addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        name = dataSnapshot.getValue(String.class);
+                        Toast.makeText(getApplicationContext(),"Welcome " + name, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                }
+        );
+
 
         creditsbutton = (Button)findViewById(R.id.button2);
         creditsbutton.setOnClickListener(
