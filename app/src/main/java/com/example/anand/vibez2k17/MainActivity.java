@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         Fabric.with(this, new TwitterCore(authConfig), digitsBuilder.build());
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference phonelistref = database.getReference("phonenumbers");
+        final DatabaseReference phonelistref1 = database.getReference("phonenumbers");
         String name, gender, email, college, dept;
 
 
@@ -92,10 +93,32 @@ public class MainActivity extends AppCompatActivity {
         digitsAuthButton2.setCallback(
                 new AuthCallback() {
                     @Override
-                    public void success(DigitsSession session, String phoneNumber) {
-                        Intent gotomainmenu = new Intent(MainActivity.this,MainMenu.class);
-                        gotomainmenu.putExtra("phonenumber",phoneNumber);
-                        startActivity(gotomainmenu);
+                    public void success(DigitsSession session, final String phoneNumber) {
+
+                        Toast.makeText(getApplicationContext(),"Please wait",Toast.LENGTH_SHORT).show();
+                        phonelistref1.addListenerForSingleValueEvent(
+                                new ValueEventListener() {
+                                    @Override
+                                    public void onDataChange(DataSnapshot dataSnapshot) {
+                                        numlist = dataSnapshot.getValue(String.class);
+                                        if(numlist.contains(phoneNumber)){
+                                            Intent gotomainmenu = new Intent(MainActivity.this,MainMenu.class);
+                                            gotomainmenu.putExtra("phonenumber",phoneNumber);
+                                            startActivity(gotomainmenu);
+                                        }
+                                        else {
+                                            Toast.makeText(getApplicationContext(),"Please register first",Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onCancelled(DatabaseError databaseError) {
+
+                                    }
+                                }
+                        );
+
+
 
                     }
 
