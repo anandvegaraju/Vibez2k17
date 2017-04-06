@@ -1,76 +1,110 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    tools:context="com.example.anand.vibez2k17.MainMenu"
-    android:background="@drawable/bg">
-
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager1"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="150dp"></android.support.v4.view.ViewPager>
+        android:layout_height="match_parent"
 
-    <ImageButton
-        android:id="@+id/imageButton5"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/events01"
-        android:layout_below="@+id/viewPager1"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        tools:context="com.example.anand.vibez2k17.MainMenu"
+        android:background="@drawable/bg">
 
-    <ImageButton
-        android:id="@+id/imageButton7"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/gallery01"
-        android:layout_below="@+id/viewPager1"
-        android:layout_toRightOf="@+id/imageButton5"
-        android:layout_toEndOf="@+id/imageButton5" />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"></android.support.v4.view.ViewPager>
 
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/dir01"
-        android:layout_below="@+id/imageButton7"
-        android:layout_toRightOf="@+id/imageButton5"
-        android:layout_toEndOf="@+id/imageButton5" />
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/events01"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_below="@+id/viewPager1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
-    <Button
-        android:id="@+id/button"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact Us"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/imageButton13"
-        android:layout_toEndOf="@+id/imageButton13" />
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/gallery01"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_below="@+id/viewPager1"
+            android:layout_toRightOf="@+id/imageButton5"
+            android:layout_toEndOf="@+id/imageButton5" />
 
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.AppCompat.Button.Colored"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Credits"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/button"
-        android:layout_toStartOf="@+id/button"
-        android:layout_marginRight="11dp"
-        android:layout_marginEnd="11dp" />
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/imageButton7"
+            android:layout_toEndOf="@+id/imageButton5"
+            android:layout_toRightOf="@+id/imageButton5"
+            android:scaleType="fitXY"
+            android:background="@null"
+            app:srcCompat="@drawable/dir01" />
 
-    <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="200dp"
-        android:layout_height="150dp"
-        app:srcCompat="@drawable/sp01"
-        android:layout_below="@+id/imageButton5"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/imageButton13"
+            android:layout_toEndOf="@+id/imageButton13" />
 
-</RelativeLayout>
+        <Button
+            android:id="@+id/button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credits"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_below="@+id/imageButtonfb"
+            android:layout_marginRight="11dp"
+            android:layout_marginEnd="11dp" />
 
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/sp01"
+            android:layout_below="@+id/imageButton5"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:id="@+id/imageButtonfb"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/fbicon"
+            android:layout_below="@+id/imageButton13"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            app:srcCompat="@drawable/alumni"
+            android:scaleType="fitXY"
+            android:background="@null"
+            android:layout_below="@+id/imageButton11"
+            android:layout_toEndOf="@+id/imageButtonfb"
+            android:layout_toRightOf="@+id/imageButtonfb"/>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>
