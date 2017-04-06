@@ -1,6 +1,8 @@
 package com.example.anand.vibez2k17;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -23,10 +25,12 @@ import com.google.firebase.database.ValueEventListener;
  */
 
 public class MainMenu extends AppCompatActivity {
-    String phonenumber,name;
+    String phonenumber,name,facebookUrl;
     Button creditsbutton, contactusbutton;
-    ImageButton eventbutton, gallerybutton, sponsorsbutton, directionbutton;
+    ImageButton eventbutton, gallerybutton, sponsorsbutton, directionbutton,facebookbutton;
     ViewPager viewPager;
+    public static String FACEBOOK_URL = "https://www.facebook.com/sambhramfest2k17";
+    public static String FACEBOOK_PAGE_ID = "sambhramfest2k17";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,6 +38,9 @@ public class MainMenu extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         viewPager = (ViewPager)findViewById(R.id.viewPager1);
         ViewPagerAdapter viewPagerAdapter = new ViewPagerAdapter(this);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         viewPager.setAdapter(viewPagerAdapter);
         Intent intent = getIntent();
@@ -55,7 +62,7 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
-
+        // show credits
         creditsbutton = (Button)findViewById(R.id.button2);
         creditsbutton.setOnClickListener(
                 new View.OnClickListener() {
@@ -66,6 +73,7 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
+        //open google maps for directions
         directionbutton = (ImageButton)findViewById(R.id.imageButton11);
         directionbutton.setOnClickListener(
                 new View.OnClickListener() {
@@ -79,6 +87,34 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
+        // open fb page
+        facebookbutton = (ImageButton)findViewById(R.id.imageButtonfb);
+        facebookUrl = getFacebookPageURL(this);
+        facebookbutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent facebookIntent = new Intent(Intent.ACTION_VIEW);
+                        facebookIntent.setData(Uri.parse(facebookUrl));
+                        startActivity(facebookIntent);
+                    }
+                }
+        );
 
+
+    }
+
+    public String getFacebookPageURL(Context context) {
+        PackageManager packageManager = context.getPackageManager();
+        try {
+            int versionCode = packageManager.getPackageInfo("com.facebook.katana", 0).versionCode;
+            if (versionCode >= 3002850) { //newer versions of fb app
+                return "fb://facewebmodal/f?href=" + FACEBOOK_URL;
+            } else { //older versions of fb app
+                return "fb://page/" + FACEBOOK_PAGE_ID;
+            }
+        } catch (PackageManager.NameNotFoundException e) {
+            return FACEBOOK_URL; //normal web url
+        }
     }
 }

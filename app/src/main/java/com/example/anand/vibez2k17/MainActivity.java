@@ -37,16 +37,16 @@ public class MainActivity extends AppCompatActivity {
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference phonelistref = database.getReference("phonenumbers");
         final DatabaseReference phonelistref1 = database.getReference("phonenumbers");
-        String name, gender, email, college, dept;
-
-
 
 
 
         setContentView(R.layout.activity_main);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         DigitsAuthButton digitsButton = (DigitsAuthButton) findViewById(R.id.auth_button2);
-        digitsButton.setText("Register using Phone Number");
+        digitsButton.setText("Register");
         digitsButton.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
         digitsButton.setCallback(new AuthCallback() {
             @Override
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         DigitsAuthButton digitsAuthButton2 = (DigitsAuthButton)findViewById(R.id.auth_button);
-        digitsAuthButton2.setText("Login using Phone Number");
+        digitsAuthButton2.setText("Login");
         digitsAuthButton2.setBackgroundColor(getResources().getColor(R.color.colorPrimaryDark));
         digitsAuthButton2.setCallback(
                 new AuthCallback() {

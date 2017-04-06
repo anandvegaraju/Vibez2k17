@@ -63,7 +63,8 @@
             android:text="Contact Us"
             android:layout_alignParentBottom="true"
             android:layout_toRightOf="@+id/imageButton13"
-            android:layout_toEndOf="@+id/imageButton13" />
+            android:layout_toEndOf="@+id/imageButton13"
+            android:layout_marginTop="30dp"/>
 
         <Button
             android:id="@+id/button2"
@@ -76,7 +77,8 @@
             android:layout_toStartOf="@+id/button"
             android:layout_below="@+id/imageButtonfb"
             android:layout_marginRight="11dp"
-            android:layout_marginEnd="11dp" />
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="30dp"/>
 
         <ImageButton
             android:id="@+id/imageButton13"

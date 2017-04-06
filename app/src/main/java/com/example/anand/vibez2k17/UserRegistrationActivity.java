@@ -38,6 +38,10 @@ public class UserRegistrationActivity extends AppCompatActivity {
 
         setContentView(R.layout.regform_activity);
 
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+
         // link the form layout to objects
         fullname = (EditText)findViewById(R.id.fullnameField);
         emailid = (EditText)findViewById(R.id.emailField);

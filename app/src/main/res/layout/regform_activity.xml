@@ -1,140 +1,146 @@
-<RelativeLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	android:layout_width="match_parent"
-	android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <LinearLayout
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_centerVertical="true"
-		android:layout_margin="20dp"
-		android:orientation="vertical"
-		android:id="@+id/linearLayout">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-		<android.support.design.widget.TextInputLayout
-			android:id="@+id/inputLayoutFullName"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<!--app:errorTextAppearance="@style/error_appearance"-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
 
-			<EditText
-				android:id="@+id/fullnameField"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:hint="Full Name"
-				android:textColorHint="@color/primary_text_material_light" />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--app:errorTextAppearance="@style/error_appearance"-->
 
-		</android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/fullnameField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Full Name"
+                    android:textColorHint="@color/primary_text_material_light" />
 
-		<android.support.design.widget.TextInputLayout
-			android:id="@+id/inputLayoutEmail"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<!--app:errorTextAppearance="@style/error_appearance">-->
+            </android.support.design.widget.TextInputLayout>
 
-			<EditText
-				android:id="@+id/emailField"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:hint="Email"
-				android:textColorHint="@color/primary_text_material_light" />
-		</android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--app:errorTextAppearance="@style/error_appearance">-->
+
+                <EditText
+                    android:id="@+id/emailField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:textColorHint="@color/primary_text_material_light" />
+            </android.support.design.widget.TextInputLayout>
 
 
-		<android.support.design.widget.TextInputLayout
-			android:id="@+id/inputLayoutCollege"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<!--app:errorTextAppearance="@style/error_appearance">-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutCollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--app:errorTextAppearance="@style/error_appearance">-->
 
-			<EditText
-				android:id="@+id/collegeField"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:hint="College"
-				android:textColorHint="@color/primary_text_material_light" />
-		</android.support.design.widget.TextInputLayout>
+                <EditText
+                    android:id="@+id/collegeField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="College"
+                    android:textColorHint="@color/primary_text_material_light" />
+            </android.support.design.widget.TextInputLayout>
 
-		<android.support.design.widget.TextInputLayout
-			android:id="@+id/inputLayoutDepartment"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
-			<!--app:errorTextAppearance="@style/error_appearance">-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/inputLayoutDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <!--app:errorTextAppearance="@style/error_appearance">-->
 
-			<EditText
-				android:id="@+id/departmentField"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:hint="Department"
-				android:textColorHint="@color/primary_text_material_light" />
-		</android.support.design.widget.TextInputLayout>
-		
-		<RelativeLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:paddingTop="20dp">
+                <EditText
+                    android:id="@+id/departmentField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Department"
+                    android:textColorHint="@color/primary_text_material_light" />
+            </android.support.design.widget.TextInputLayout>
 
-			<TextView
-				android:id="@+id/gender_textview"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:fontFamily="Password"
-				android:fontFeatureSettings="Password"
-				android:text="Gender"
-				android:textColor="@color/primary_text_material_light"
-				android:textSize="20dp" />
-
-            <RadioGroup
-                android:id="@+id/gendergrp"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/gender_textview"
-                android:orientation="horizontal">
+                android:paddingTop="20dp">
 
-				<RadioButton
-					android:id="@+id/male_radio_btn"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:checked="true"
-					android:text="Male"
-					android:textColor="@color/primary_text_material_light" />
+                <TextView
+                    android:id="@+id/gender_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="Password"
+                    android:fontFeatureSettings="Password"
+                    android:text="Gender"
+                    android:textColor="@color/primary_text_material_light"
+                    android:textSize="20dp" />
 
-				<RadioButton
-					android:id="@+id/female_radio_btn"
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:text="Female"
+                <RadioGroup
+                    android:id="@+id/gendergrp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/gender_textview"
+                    android:orientation="horizontal">
 
-					android:textColor="@color/primary_text_material_light" />
+                    <RadioButton
+                        android:id="@+id/male_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="Male"
+                        android:textColor="@color/primary_text_material_light" />
 
-            </RadioGroup>
+                    <RadioButton
+                        android:id="@+id/female_radio_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
 
-        </RelativeLayout>
+                        android:textColor="@color/primary_text_material_light" />
 
-		<Button
-			android:id="@+id/signUpBtn"
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="70dp"
-			android:background="@color/colorPrimary"
-			android:text="Sign Up"
-			android:textColor="@android:color/white"/>
+                </RadioGroup>
 
-	</LinearLayout>
+            </RelativeLayout>
 
-    <TextView
-        android:id="@+id/formdisplaytext"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:fontFamily="cursive"
-        android:text="Registration form "
-        android:textColor="@color/dgts__text_light"
-        android:textSize="33sp"
-        android:textStyle="bold"
-        android:layout_above="@+id/linearLayout" />
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@color/colorPrimary"
+                android:text="Sign Up"
+                android:textColor="@android:color/white"/>
 
-</RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/formdisplaytext"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:text="Registration form "
+            android:textColor="@color/dgts__text_light"
+            android:textSize="33sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/linearLayout" />
+
+    </RelativeLayout>
+
+</ScrollView>
