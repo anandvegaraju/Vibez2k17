@@ -20,7 +20,8 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutFullName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/primary_text_material_light">
                 <!--app:errorTextAppearance="@style/error_appearance"-->
 
                 <EditText
@@ -35,7 +36,8 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutEmail"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/primary_text_material_light">
                 <!--app:errorTextAppearance="@style/error_appearance">-->
 
                 <EditText
@@ -50,7 +52,8 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutCollege"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/primary_text_material_light">
                 <!--app:errorTextAppearance="@style/error_appearance">-->
 
                 <EditText
@@ -64,7 +67,8 @@
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/inputLayoutDepartment"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/primary_text_material_light">
                 <!--app:errorTextAppearance="@style/error_appearance">-->
 
                 <EditText
