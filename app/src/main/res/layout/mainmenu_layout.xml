@@ -19,36 +19,41 @@
 
         <ImageButton
             android:id="@+id/imageButton5"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/events01"
             android:scaleType="fitXY"
             android:background="@null"
             android:layout_below="@+id/viewPager1"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="23dp"
+           />
 
         <ImageButton
             android:id="@+id/imageButton7"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/gallery01"
             android:background="@null"
             android:scaleType="fitXY"
             android:layout_below="@+id/viewPager1"
-            android:layout_toRightOf="@+id/imageButton5"
-            android:layout_toEndOf="@+id/imageButton5" />
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="29dp"
+         />
 
         <ImageButton
             android:id="@+id/imageButton11"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
-            android:layout_below="@+id/imageButton7"
-            android:layout_toEndOf="@+id/imageButton5"
-            android:layout_toRightOf="@+id/imageButton5"
             android:scaleType="fitXY"
             android:background="@null"
-            app:srcCompat="@drawable/dir01" />
+            app:srcCompat="@drawable/dir01"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/imageButton7"
+            android:layout_alignStart="@+id/imageButton7"
+         />
 
         <Button
             android:id="@+id/button"
@@ -75,33 +80,34 @@
 
         <ImageButton
             android:id="@+id/imageButton13"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/sp01"
-            android:layout_below="@+id/imageButton5"
             android:scaleType="fitXY"
             android:background="@null"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignTop="@+id/imageButton11"
+            android:layout_alignStart="@+id/imageButton5" />
         <ImageButton
             android:id="@+id/imageButtonfb"
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/fbicon"
-            android:layout_below="@+id/imageButton13"
             android:scaleType="fitXY"
             android:background="@null"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_below="@+id/imageButton13"
+            android:layout_marginTop="15dp"
+            android:layout_alignStart="@+id/imageButton13"
+        />
         <ImageButton
-            android:layout_width="200dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/alumni"
             android:scaleType="fitXY"
             android:background="@null"
             android:layout_below="@+id/imageButton11"
-            android:layout_toEndOf="@+id/imageButtonfb"
-            android:layout_toRightOf="@+id/imageButtonfb"/>
+            android:layout_marginTop="15dp"
+            android:layout_alignStart="@+id/imageButton11"
+        />
 
     </RelativeLayout>
 

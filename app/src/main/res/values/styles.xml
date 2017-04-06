@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">#995906</item>
         <item name="colorAccent">#bc0f17</item>
-        <item name="android:colorBackground">@color/tw__blue_pressed</item>
+        <item name="android:colorBackground">@color/dgts__purple</item>
         <item name="android:windowBackground">@drawable/bg</item>
         <item name="android:textColorPrimary">@color/primary_text_material_light</item>
         <item name="android:textColorSecondary">@color/anandc</item>

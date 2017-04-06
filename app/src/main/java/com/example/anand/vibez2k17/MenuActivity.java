@@ -20,6 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MenuActivity extends AppCompatActivity {
 
     String nametext, phonenumber, gendertext, collegetext, depttext, emailtext, phlist;
+    int regcount;
     TextView greeting_text;
 
     @Override
@@ -27,11 +28,12 @@ public class MenuActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
         final FirebaseDatabase database = FirebaseDatabase.getInstance();
-        final DatabaseReference userref;
+        final DatabaseReference userref,regcountref;
         greeting_text = (TextView)findViewById(R.id.greetingtext);
 
 
         final DatabaseReference phlistref = database.getReference("phonenumbers");
+        regcountref = database.getReference("regcount");
 
         Intent i = getIntent();
 
@@ -75,6 +77,21 @@ public class MenuActivity extends AppCompatActivity {
                         }
                     }
             );
+
+        regcountref.addListenerForSingleValueEvent(
+                new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        regcount = dataSnapshot.getValue(Integer.class);
+                        regcountref.setValue(regcount+1);
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                }
+        );
 
         Intent gotomain = new Intent(MenuActivity.this,MainActivity.class);
         Toast.makeText(getApplicationContext(),"Updating to db",Toast.LENGTH_LONG).show();
