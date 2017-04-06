@@ -48,12 +48,31 @@ public class UserRegistrationActivity extends AppCompatActivity {
         male = (RadioButton)findViewById(R.id.male_radio_btn);
         female = (RadioButton)findViewById(R.id.female_radio_btn);
 
+        fullname.setHintTextColor(getResources().getColor(R.color.primary_text_material_light));
+        emailid.setHintTextColor(getResources().getColor(R.color.primary_text_material_light));
+        collegename.setHintTextColor(getResources().getColor(R.color.primary_text_material_light));
+        deptname.setHintTextColor(getResources().getColor(R.color.primary_text_material_light));
+
+
         submit.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         // read text data from widgets and upload it to db
                         //store data in strings
+
+                        if(fullname.getText().toString().trim().equals("")){
+                            fullname.setError("Name is required");
+                        }
+                        else if(collegename.getText().toString().trim().equals("")){
+                            collegename.setError("College name is required");
+                        }
+                        else if(emailid.getText().toString().trim().equals("")){
+                            emailid.setError("Email ID is required");
+                        }
+
+                        else
+                        {
 
 
 
@@ -84,7 +103,7 @@ public class UserRegistrationActivity extends AppCompatActivity {
 
 
 
-                    }
+                    }}
                 }
         );
 

@@ -38,6 +38,7 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="cursive"
         android:text="Or"
+        android:textColor="@color/primary_text_material_light"
         android:textSize="32sp"
         android:textStyle="bold" />
 

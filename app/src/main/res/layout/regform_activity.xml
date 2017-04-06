@@ -23,7 +23,8 @@
 				android:id="@+id/fullnameField"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:hint="Full Name"/>
+				android:hint="Full Name"
+				android:textColorHint="@color/primary_text_material_light" />
 
 		</android.support.design.widget.TextInputLayout>
 
@@ -37,7 +38,8 @@
 				android:id="@+id/emailField"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:hint="Email"/>
+				android:hint="Email"
+				android:textColorHint="@color/primary_text_material_light" />
 		</android.support.design.widget.TextInputLayout>
 
 
@@ -51,7 +53,8 @@
 				android:id="@+id/collegeField"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:hint="College"/>
+				android:hint="College"
+				android:textColorHint="@color/primary_text_material_light" />
 		</android.support.design.widget.TextInputLayout>
 
 		<android.support.design.widget.TextInputLayout
@@ -64,7 +67,8 @@
 				android:id="@+id/departmentField"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:hint="Department"/>
+				android:hint="Department"
+				android:textColorHint="@color/primary_text_material_light" />
 		</android.support.design.widget.TextInputLayout>
 		
 		<RelativeLayout
@@ -76,10 +80,11 @@
 				android:id="@+id/gender_textview"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="Gender"
+				android:fontFamily="Password"
 				android:fontFeatureSettings="Password"
-				android:textSize="20dp"
-				android:fontFamily="Password" />
+				android:text="Gender"
+				android:textColor="@color/primary_text_material_light"
+				android:textSize="20dp" />
 
             <RadioGroup
                 android:id="@+id/gendergrp"
@@ -88,20 +93,21 @@
                 android:layout_toRightOf="@+id/gender_textview"
                 android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/male_radio_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:checked="true"
-                    android:text="Male" />
+				<RadioButton
+					android:id="@+id/male_radio_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:checked="true"
+					android:text="Male"
+					android:textColor="@color/primary_text_material_light" />
 
-                <RadioButton
-                    android:id="@+id/female_radio_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Female"
+				<RadioButton
+					android:id="@+id/female_radio_btn"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Female"
 
-                    />
+					android:textColor="@color/primary_text_material_light" />
 
             </RadioGroup>
 

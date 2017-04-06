@@ -1,6 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -10,7 +10,7 @@
         <item name="android:windowBackground">@drawable/bg</item>
         <item name="android:textColorPrimary">@color/primary_text_material_light</item>
         <item name="android:textColorSecondary">@color/anandc</item>
+        <item name="android:statusBarColor">?android:attr/colorEdgeEffect</item>
         <item name="android:textColorPrimaryInverse">@color/dgts__purple</item>
     </style>
-
 </resources>
