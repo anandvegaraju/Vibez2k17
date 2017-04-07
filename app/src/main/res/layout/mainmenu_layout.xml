@@ -56,7 +56,7 @@
          />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/csbutton"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,8 +73,8 @@
             android:layout_height="wrap_content"
             android:text="Credits"
             android:layout_alignParentBottom="true"
-            android:layout_toLeftOf="@+id/button"
-            android:layout_toStartOf="@+id/button"
+            android:layout_toLeftOf="@+id/csbutton"
+            android:layout_toStartOf="@+id/csbutton"
             android:layout_below="@+id/imageButtonfb"
             android:layout_marginRight="11dp"
             android:layout_marginEnd="11dp"

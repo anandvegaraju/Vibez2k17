@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.vibez2k17.TechnicalEventsActivity"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/csbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Counter Strike"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/caedmbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="CAED modelling"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <Button
+                android:id="@+id/treasurehuntbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Treasure Hunt"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/minimilitiabutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Mini Militia"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <Button
+                android:id="@+id/debuggingbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Debugging"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="232dp" />
+
+            <Button
+                android:id="@+id/wtfisthisbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Pick and Speech"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="288dp" />
+
+            <Button
+                android:id="@+id/codingbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Coding"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

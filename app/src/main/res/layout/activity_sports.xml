@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.vibez2k17.SportEventsActivity"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/csbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Short Cricket"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <Button
+                android:id="@+id/realcricketbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Long Cricket"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="147dp"
+                tools:layout_editor_absoluteY="72dp" />
+
+            <Button
+                android:id="@+id/throwballbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Throwball"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="128dp" />
+
+            <Button
+                android:id="@+id/volleyballbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Volleyball"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <Button
+                android:id="@+id/kabaddibutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Kabbadi"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="232dp" />
+
+            <Button
+                android:id="@+id/badmintonsinglebutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Badminton singles"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="288dp" />
+
+            <Button
+                android:id="@+id/badmintondoublebutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:text="Badminton doubles"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:textStyle="bold"
+
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="342dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

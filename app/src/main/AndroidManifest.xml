@@ -22,6 +22,10 @@
         <activity android:name=".MenuActivity"/>
         <activity android:name=".MainMenu" android:screenOrientation="portrait"/>
         <activity android:name=".EventMenuActivity"/>
+        <activity android:name=".CulturalEventsActivity"/>
+        <activity android:name=".IntercollegeEventsActivity"/>
+        <activity android:name=".SportEventsActivity"/>
+        <activity android:name=".TechnicalEventsActivity"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8121b0dc0c3c47aa2916d2beb089d2f82e04b187" />
