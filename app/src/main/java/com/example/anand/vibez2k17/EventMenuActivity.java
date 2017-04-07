@@ -27,7 +27,7 @@ public class EventMenuActivity extends AppCompatActivity {
         // link buttons with event categories
 
         culturalbutton = (ImageButton)findViewById(R.id.culturalcat_button);
-        technicalbutton = (ImageButton)findViewById(R.id.tech_button);
+        technicalbutton = (ImageButton)findViewById(R.id.gallerybutton);
         sportsbutton = (ImageButton)findViewById(R.id.sportscat_button);
         intercolgbutton = (ImageButton)findViewById(R.id.intercolg_button);
 

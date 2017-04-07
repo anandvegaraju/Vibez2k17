@@ -31,7 +31,7 @@
            />
 
         <ImageButton
-            android:id="@+id/tech_button"
+            android:id="@+id/gallerybutton"
             android:layout_width="130dp"
             android:layout_height="130dp"
             app:srcCompat="@drawable/gallery01"
@@ -51,8 +51,8 @@
             android:background="@null"
             app:srcCompat="@drawable/dir01"
             android:layout_marginTop="15dp"
-            android:layout_below="@+id/tech_button"
-            android:layout_alignStart="@+id/tech_button"
+            android:layout_below="@+id/gallerybutton"
+            android:layout_alignStart="@+id/gallerybutton"
          />
 
         <Button
@@ -100,16 +100,17 @@
             android:layout_marginTop="15dp"
             android:layout_alignStart="@+id/imageButton13"
         />
+
         <ImageButton
+            android:id="@+id/alumnibutton"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            app:srcCompat="@drawable/alumni"
-            android:scaleType="fitXY"
-            android:background="@null"
+            android:layout_alignStart="@+id/imageButton11"
             android:layout_below="@+id/imageButton11"
             android:layout_marginTop="15dp"
-            android:layout_alignStart="@+id/imageButton11"
-        />
+            android:background="@null"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/alumni" />
 
     </RelativeLayout>
 
