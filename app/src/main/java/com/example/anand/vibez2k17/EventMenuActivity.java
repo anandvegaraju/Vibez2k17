@@ -2,8 +2,10 @@ package com.example.anand.vibez2k17;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -11,7 +13,7 @@ import android.widget.ImageButton;
  * Created by Anand on 07-04-2017.
  */
 
-public class EventMenuActivity extends AppCompatActivity {
+public class EventMenuActivity extends AppCompatActivity implements View.OnTouchListener {
     ImageButton culturalbutton, technicalbutton, sportsbutton, intercolgbutton;
     String phonenumber;
     @Override
@@ -75,9 +77,32 @@ public class EventMenuActivity extends AppCompatActivity {
         );
 
 
+        culturalbutton.setOnTouchListener(this);
+        technicalbutton.setOnTouchListener(this);
+        intercolgbutton.setOnTouchListener(this);
+        sportsbutton.setOnTouchListener(this);
 
 
 
 
+
+
+
+
+
+    }
+
+    @Override
+    public boolean onTouch(final View v, MotionEvent event) {
+        v.setAlpha(0.5f);
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                v.setAlpha(0.75f);
+
+            }
+        }, 600);
+        return super.onTouchEvent(event);
     }
 }

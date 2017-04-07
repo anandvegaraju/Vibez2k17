@@ -167,7 +167,7 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
 
             }
         }, 600);
-        return true;
+        return super.onTouchEvent(event);
     }
 
 
