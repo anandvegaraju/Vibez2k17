@@ -25,6 +25,7 @@ public class CustomList extends ArrayAdapter<String>{
         View rowView= inflater.inflate(R.layout.contact_single, null, true);
         TextView txtTitle = (TextView) rowView.findViewById(R.id.txt);
 
+
         txtTitle.setText(web[position]);
 
         return rowView;

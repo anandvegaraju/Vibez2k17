@@ -1,5 +1,7 @@
 package com.example.anand.vibez2k17;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -20,6 +22,10 @@ public class ContactListActivity extends AppCompatActivity {
             "App team : Bharath",
 
     } ;
+    String[] contactlist = {
+            "+919483526746",
+            "+918660339519"
+    } ;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,9 +41,15 @@ public class ContactListActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(ContactListActivity.this, "You Clicked at " +web[+ position], Toast.LENGTH_SHORT).show();
-
+                openWhatsappContact(contactlist[position]);
             }
         });
+    }
+
+    void openWhatsappContact(String number) {
+        Uri uri = Uri.parse("smsto:" + number);
+        Intent i = new Intent(Intent.ACTION_SENDTO, uri);
+        i.setPackage("com.whatsapp");
+        startActivity(Intent.createChooser(i, ""));
     }
 }
