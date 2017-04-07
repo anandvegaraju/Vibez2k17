@@ -5,10 +5,12 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -24,7 +26,7 @@ import com.google.firebase.database.ValueEventListener;
  * Created by Anand on 05-04-2017.
  */
 
-public class MainMenu extends AppCompatActivity {
+public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
     String phonenumber,name,facebookUrl;
     Button creditsbutton, contactusbutton;
     ImageButton eventbutton, gallerybutton, sponsorsbutton, directionbutton,facebookbutton,alumnibutton;
@@ -137,11 +139,38 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
+        sponsorsbutton = (ImageButton)findViewById(R.id.imageButton13);
+        gallerybutton = (ImageButton)findViewById(R.id.gallerybutton);
+
+        eventbutton.setOnTouchListener(this);
+        facebookbutton.setOnTouchListener(this);
+        alumnibutton.setOnTouchListener(this);
+        directionbutton.setOnTouchListener(this);
+        sponsorsbutton.setOnTouchListener(this);
+        gallerybutton.setOnTouchListener(this);
+
+
 
 
 
 
     }
+
+    @Override
+    public boolean onTouch(final View v, MotionEvent event) {
+        v.setAlpha(0.5f);
+        final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                v.setAlpha(0.75f);
+
+            }
+        }, 600);
+        return true;
+    }
+
+
 
     public String getFacebookPageURL(Context context) {
         PackageManager packageManager = context.getPackageManager();
