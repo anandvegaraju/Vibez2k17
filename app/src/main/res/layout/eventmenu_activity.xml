@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.vibez2k17.EventMenuActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/culturalcat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cultural01"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-3dp" />
+
+            <ImageButton
+                android:id="@+id/tech_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/techfinal01"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="208dp" />
+
+            <ImageButton
+                android:id="@+id/sportscat_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/sportsfinal01"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="438dp" />
+
+            <ImageButton
+                android:id="@+id/intercolg_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ice01" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -99,7 +99,21 @@ public class MainMenu extends AppCompatActivity {
                         startActivity(facebookIntent);
                     }
                 }
+
         );
+
+        eventbutton = (ImageButton)findViewById(R.id.imageButton5);
+        eventbutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent gotoeventmenu = new Intent(MainMenu.this, EventMenuActivity.class);
+                        gotoeventmenu.putExtra("phonenumber",phonenumber);
+                        startActivity(gotoeventmenu);
+                    }
+                }
+        );
+
 
 
     }
@@ -117,4 +131,7 @@ public class MainMenu extends AppCompatActivity {
             return FACEBOOK_URL; //normal web url
         }
     }
+
+
+
 }

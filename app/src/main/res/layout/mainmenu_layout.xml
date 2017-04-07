@@ -19,8 +19,8 @@
 
         <ImageButton
             android:id="@+id/imageButton5"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/events01"
             android:scaleType="fitXY"
             android:background="@null"
@@ -31,9 +31,9 @@
            />
 
         <ImageButton
-            android:id="@+id/imageButton7"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:id="@+id/tech_button"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/gallery01"
             android:background="@null"
             android:scaleType="fitXY"
@@ -45,14 +45,14 @@
 
         <ImageButton
             android:id="@+id/imageButton11"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             android:scaleType="fitXY"
             android:background="@null"
             app:srcCompat="@drawable/dir01"
             android:layout_marginTop="15dp"
-            android:layout_below="@+id/imageButton7"
-            android:layout_alignStart="@+id/imageButton7"
+            android:layout_below="@+id/tech_button"
+            android:layout_alignStart="@+id/tech_button"
          />
 
         <Button
@@ -82,8 +82,8 @@
 
         <ImageButton
             android:id="@+id/imageButton13"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/sp01"
             android:scaleType="fitXY"
             android:background="@null"
@@ -91,8 +91,8 @@
             android:layout_alignStart="@+id/imageButton5" />
         <ImageButton
             android:id="@+id/imageButtonfb"
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/fbicon"
             android:scaleType="fitXY"
             android:background="@null"
@@ -101,8 +101,8 @@
             android:layout_alignStart="@+id/imageButton13"
         />
         <ImageButton
-            android:layout_width="150dp"
-            android:layout_height="150dp"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
             app:srcCompat="@drawable/alumni"
             android:scaleType="fitXY"
             android:background="@null"
