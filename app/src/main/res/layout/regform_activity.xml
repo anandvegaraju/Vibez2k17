@@ -28,7 +28,9 @@
                     android:id="@+id/fullnameField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:hint="Full Name"
+                    android:singleLine="true"
                     android:textColorHint="@color/primary_text_material_light" />
 
             </android.support.design.widget.TextInputLayout>
@@ -44,7 +46,9 @@
                     android:id="@+id/emailField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:hint="Email"
+                    android:singleLine="true"
                     android:textColorHint="@color/primary_text_material_light" />
             </android.support.design.widget.TextInputLayout>
 
@@ -60,7 +64,9 @@
                     android:id="@+id/collegeField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:hint="College"
+                    android:singleLine="true"
                     android:textColorHint="@color/primary_text_material_light" />
             </android.support.design.widget.TextInputLayout>
 
@@ -75,7 +81,9 @@
                     android:id="@+id/departmentField"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="casual"
                     android:hint="Department"
+                    android:singleLine="true"
                     android:textColorHint="@color/primary_text_material_light" />
             </android.support.design.widget.TextInputLayout>
 
@@ -88,7 +96,7 @@
                     android:id="@+id/gender_textview"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="Password"
+                    android:fontFamily="casual"
                     android:fontFeatureSettings="Password"
                     android:text="Gender"
                     android:textColor="@color/primary_text_material_light"
@@ -106,6 +114,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checked="true"
+                        android:fontFamily="casual"
                         android:text="Male"
                         android:textColor="@color/primary_text_material_light" />
 
@@ -113,8 +122,9 @@
                         android:id="@+id/female_radio_btn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Female"
+                        android:fontFamily="casual"
 
+                        android:text="Female"
                         android:textColor="@color/primary_text_material_light" />
 
                 </RadioGroup>
@@ -127,8 +137,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
                 android:background="@color/colorPrimary"
+                android:fontFamily="casual"
                 android:text="Sign Up"
-                android:textColor="@android:color/white"/>
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
 
         </LinearLayout>
 
@@ -138,12 +150,11 @@
             android:layout_height="40dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:fontFamily="cursive"
+            android:fontFamily="casual"
             android:text="Registration form "
             android:textColor="@color/dgts__text_light"
-            android:textSize="33sp"
-            android:textStyle="bold"
-            android:layout_above="@+id/linearLayout" />
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

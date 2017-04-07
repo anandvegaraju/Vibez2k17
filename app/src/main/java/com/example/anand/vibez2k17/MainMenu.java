@@ -27,7 +27,7 @@ import com.google.firebase.database.ValueEventListener;
 public class MainMenu extends AppCompatActivity {
     String phonenumber,name,facebookUrl;
     Button creditsbutton, contactusbutton;
-    ImageButton eventbutton, gallerybutton, sponsorsbutton, directionbutton,facebookbutton;
+    ImageButton eventbutton, gallerybutton, sponsorsbutton, directionbutton,facebookbutton,alumnibutton;
     ViewPager viewPager;
     public static String FACEBOOK_URL = "https://www.facebook.com/sambhramfest2k17";
     public static String FACEBOOK_PAGE_ID = "sambhramfest2k17";
@@ -124,6 +124,20 @@ public class MainMenu extends AppCompatActivity {
                     }
                 }
         );
+
+        alumnibutton = (ImageButton)findViewById(R.id.alumnibutton);
+        alumnibutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent gotoalumnireg = new Intent(MainMenu.this, AlumniRegActivity.class);
+                        gotoalumnireg.putExtra("phonenumber",phonenumber);
+                        startActivity(gotoalumnireg);
+                    }
+                }
+        );
+
+
 
 
 

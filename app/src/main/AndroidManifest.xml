@@ -27,6 +27,8 @@
         <activity android:name=".SportEventsActivity"/>
         <activity android:name=".TechnicalEventsActivity"/>
         <activity android:name=".ContactListActivity"/>
+        <activity android:name=".AlumniRegActivity"/>
+        <activity android:name=".AlumniDB"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8121b0dc0c3c47aa2916d2beb089d2f82e04b187" />
