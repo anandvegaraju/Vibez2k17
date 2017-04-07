@@ -114,6 +114,17 @@ public class MainMenu extends AppCompatActivity {
                 }
         );
 
+        contactusbutton = (Button)findViewById(R.id.csbutton);
+        contactusbutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent gotocontacts = new Intent(MainMenu.this,ContactListActivity.class);
+                        startActivity(gotocontacts);
+                    }
+                }
+        );
+
 
 
     }
