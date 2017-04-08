@@ -60,14 +60,13 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="30dp"
-            android:layout_toEndOf="@+id/imageButton13"
-            android:layout_toRightOf="@+id/imageButton13"
             android:fontFamily="casual"
             android:text="Contact Us"
             android:textColor="@color/primary_text_material_light"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/imageButtonfb"
+            android:layout_marginBottom="30dp" />
 
         <Button
             android:id="@+id/button2"
@@ -75,7 +74,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_below="@+id/imageButtonfb"
+            android:layout_below="@+id/collegeinfo"
             android:layout_marginEnd="11dp"
             android:layout_marginRight="11dp"
             android:layout_marginTop="30dp"
@@ -83,6 +82,7 @@
             android:layout_toStartOf="@+id/csbutton"
             android:fontFamily="casual"
             android:text="Credits"
+            android:textColor="@color/primary_text_material_light"
             android:textSize="18sp" />
 
         <ImageButton
@@ -116,6 +116,27 @@
             android:background="@null"
             android:scaleType="fitXY"
             app:srcCompat="@drawable/alumni" />
+
+        <View
+            android:id="@+id/lineview"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/alumnibutton"
+            android:layout_marginTop="30dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/collegeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lineview"
+            android:fontFamily="casual"
+            android:text="Sambhram Institute Of Technology\n M.S Palya, Vidyaranyapura PO\n Bangalore 560097\nPh : 080-23643618"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_material_light"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+
 
     </RelativeLayout>
 

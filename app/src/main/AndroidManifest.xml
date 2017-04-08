@@ -31,10 +31,27 @@
         <activity android:name=".AlumniDB" android:screenOrientation="portrait"/>
         <activity android:name=".EventTemplateActivity" android:screenOrientation="portrait"/>
         <activity android:name=".EventRegActivity" android:screenOrientation="portrait"/>
+
+
+
+
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/vibez" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8121b0dc0c3c47aa2916d2beb089d2f82e04b187" />
     </application>
+
+
+
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
