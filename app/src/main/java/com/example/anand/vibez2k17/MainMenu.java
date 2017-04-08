@@ -141,6 +141,24 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
         sponsorsbutton = (ImageButton)findViewById(R.id.imageButton13);
         gallerybutton = (ImageButton)findViewById(R.id.gallerybutton);
 
+        sponsorsbutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+
+        gallerybutton.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                    }
+                }
+        );
+
         eventbutton.setOnTouchListener(this);
         facebookbutton.setOnTouchListener(this);
         alumnibutton.setOnTouchListener(this);
