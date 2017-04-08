@@ -21,11 +21,12 @@
 
 
             <Button
-                android:id="@+id/csbutton"
+                android:id="@+id/counterstrike"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Group Dance"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -40,6 +41,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Solo Dance"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -54,6 +56,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Group Song"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -68,6 +71,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Solo song"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -82,6 +86,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="MADADS"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -96,6 +101,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Fashion show"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -110,12 +116,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Dumb charades"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
@@ -125,12 +132,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Short Film"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
@@ -140,12 +148,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Photography"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
@@ -155,12 +164,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Beat boxing"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
@@ -170,12 +180,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Mimic show"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
@@ -185,12 +196,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Pencil Sketch"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
         </LinearLayout>

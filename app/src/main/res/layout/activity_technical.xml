@@ -21,11 +21,12 @@
 
 
             <Button
-                android:id="@+id/csbutton"
+                android:id="@+id/counterstrike"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Counter Strike"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -40,6 +41,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="CAED modelling"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -54,6 +56,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Treasure Hunt"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -68,6 +71,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Mini Militia"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -82,6 +86,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Debugging"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -96,6 +101,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Pick and Speech"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
@@ -110,12 +116,13 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="cursive"
+                android:onClick="OnClick"
                 android:text="Coding"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
 
+                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 

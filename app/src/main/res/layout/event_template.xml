@@ -29,11 +29,11 @@
 
             <TextView
                 android:id="@+id/eventdetailhead"
-                android:layout_width="280dip"
+                android:layout_width="match_parent"
                 android:layout_height="60dip"
                 android:fontFamily="casual"
                 android:text="Details"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
@@ -46,8 +46,16 @@
                 android:layout_gravity="center_vertical|right"
                 android:fontFamily="casual"
                 android:text="This competition will provide an opportunity for the younger generation to showcase their talent in different fields and will be a stepping-stone for their success at the State and National levels."
+                android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
                 android:textSize="15sp" />
+
+            <View
+                android:id="@+id/lineview"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#c0c0c0"/>
 
 
             <TextView
@@ -57,7 +65,7 @@
                 android:layout_marginTop="30dp"
                 android:fontFamily="casual"
                 android:text="Timings"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
@@ -68,12 +76,20 @@
             <TextView
                 android:id="@+id/eventtimings"
                 android:layout_width="280dip"
-                android:layout_height="60dip"
+                android:layout_height="70dip"
                 android:fontFamily="casual"
                 android:text="9:00am to 12:00 pm"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"></TextView>
+
+            <View
+                android:id="@+id/lineview1"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#c0c0c0"/>
 
             <TextView
                 android:id="@+id/textView5"
@@ -81,7 +97,7 @@
                 android:layout_height="60dip"
                 android:fontFamily="casual"
                 android:text="Registration"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
@@ -90,12 +106,20 @@
             <TextView
                 android:id="@+id/eventfee"
                 android:layout_width="280dip"
-                android:layout_height="60dip"
+                android:layout_height="70dip"
                 android:fontFamily="casual"
                 android:text="Entry Fee:              Rs. 300/-\nFirst Prize:            Rs.1000/-\nSecond Price:       Rs. 500/-"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"></TextView>
+
+            <View
+                android:id="@+id/lineview2"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#c0c0c0"/>
 
             <TextView
                 android:id="@+id/textView7"
@@ -104,7 +128,7 @@
                 android:layout_marginTop="25dp"
                 android:fontFamily="casual"
                 android:text="Rules"
-                android:textAlignment="textStart"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
@@ -113,12 +137,20 @@
             <TextView
                 android:id="@+id/eventrules"
                 android:layout_width="280dip"
-                android:layout_height="60dip"
+                android:layout_height="70dip"
                 android:fontFamily="casual"
                 android:text="1. Register only once \n2. Don't cheat \n3. Follow all rules"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="15sp"></TextView>
+
+            <View
+                android:id="@+id/lineview3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#c0c0c0"/>
 
             <Button
                 android:id="@+id/eventregisterbutton"

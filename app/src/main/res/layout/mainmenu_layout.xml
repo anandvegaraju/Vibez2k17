@@ -56,7 +56,7 @@
          />
 
         <Button
-            android:id="@+id/csbutton"
+            android:id="@+id/counterstrike"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,8 +78,8 @@
             android:layout_marginEnd="11dp"
             android:layout_marginRight="11dp"
             android:layout_marginTop="30dp"
-            android:layout_toLeftOf="@+id/csbutton"
-            android:layout_toStartOf="@+id/csbutton"
+            android:layout_toLeftOf="@+id/counterstrike"
+            android:layout_toStartOf="@+id/counterstrike"
             android:fontFamily="casual"
             android:text="Credits"
             android:textColor="@color/primary_text_material_light"

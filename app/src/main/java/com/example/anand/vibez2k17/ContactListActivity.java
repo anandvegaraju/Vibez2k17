@@ -19,12 +19,12 @@ public class ContactListActivity extends AppCompatActivity {
     ListView list;
     String[] web = {
             "App team : Anand",
-            "App team : Bharath",
+            "App team : Bharat",
 
     } ;
     String[] contactlist = {
             "+919483526746",
-            "+918660339519"
+            "+918553502771"
     } ;
 
     @Override
