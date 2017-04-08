@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anand.vibez2k17.EventTemplateActivity"
+    android:background="@drawable/bg">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="horizontal" android:id="@+id/ScrollView"
+        tools:layout_editor_absoluteY="-111dp"
+        tools:layout_editor_absoluteX="26dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout1"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/vibez" />
+
+            <TextView
+                android:id="@+id/eventdetailhead"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:fontFamily="casual"
+                android:text="Details"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/eventdetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:fontFamily="casual"
+                android:text="This competition will provide an opportunity for the younger generation to showcase their talent in different fields and will be a stepping-stone for their success at the State and National levels."
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:layout_marginTop="30dp"
+                android:fontFamily="casual"
+                android:text="Timings"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/eventtimings"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:fontFamily="casual"
+                android:text="9:00am to 12:00 pm"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:fontFamily="casual"
+                android:text="Registration"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/eventfee"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:fontFamily="casual"
+                android:text="Entry Fee:              Rs. 300/-\nFirst Prize:            Rs.1000/-\nSecond Price:       Rs. 500/-"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"></TextView>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:layout_marginTop="25dp"
+                android:fontFamily="casual"
+                android:text="Rules"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:textStyle="italic"></TextView>
+
+            <TextView
+                android:id="@+id/eventrules"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
+                android:fontFamily="casual"
+                android:text="1. Register only once \n2. Don't cheat \n3. Follow all rules"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"></TextView>
+
+            <Button
+                android:id="@+id/eventregisterbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</android.support.constraint.ConstraintLayout>

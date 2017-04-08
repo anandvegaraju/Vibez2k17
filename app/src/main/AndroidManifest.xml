@@ -19,16 +19,18 @@
 
         </activity>
         <activity android:name=".UserRegistrationActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MenuActivity"/>
+        <activity android:name=".MenuActivity" android:screenOrientation="portrait"/>
         <activity android:name=".MainMenu" android:screenOrientation="portrait"/>
-        <activity android:name=".EventMenuActivity"/>
-        <activity android:name=".CulturalEventsActivity"/>
-        <activity android:name=".IntercollegeEventsActivity"/>
-        <activity android:name=".SportEventsActivity"/>
-        <activity android:name=".TechnicalEventsActivity"/>
-        <activity android:name=".ContactListActivity"/>
-        <activity android:name=".AlumniRegActivity"/>
-        <activity android:name=".AlumniDB"/>
+        <activity android:name=".EventMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CulturalEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".IntercollegeEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".SportEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".TechnicalEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ContactListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AlumniRegActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".AlumniDB" android:screenOrientation="portrait"/>
+        <activity android:name=".EventTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EventRegActivity" android:screenOrientation="portrait"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="8121b0dc0c3c47aa2916d2beb089d2f82e04b187" />
