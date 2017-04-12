@@ -72,6 +72,7 @@ public class EventMenuActivity extends AppCompatActivity implements View.OnTouch
                     public void onClick(View v) {
                         Intent gotosports = new Intent(EventMenuActivity.this,SportEventsActivity.class);
                         gotosports.putExtra("phonenumber",phonenumber);
+                        startActivity(gotosports);
                     }
                 }
         );

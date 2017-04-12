@@ -137,9 +137,9 @@
             <TextView
                 android:id="@+id/eventrules"
                 android:layout_width="280dip"
-                android:layout_height="70dip"
+                android:layout_height="75dip"
                 android:fontFamily="casual"
-                android:text="1. Register only once \n2. Don't cheat \n3. Follow all rules"
+                android:text="1. You do not talk about Fight Club \n2. You do not talk about Fight Club \n3. Someone yells stop, goes limp, taps out, the fight is over\n4. Only two guys to a fight"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
