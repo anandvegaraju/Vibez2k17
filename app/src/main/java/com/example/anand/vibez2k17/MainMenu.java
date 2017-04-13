@@ -115,7 +115,7 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
                 }
         );
 
-        contactusbutton = (Button)findViewById(R.id.counterstrike);
+        contactusbutton = (Button)findViewById(R.id.volleyballinterbutton);
         contactusbutton.setOnClickListener(
                 new View.OnClickListener() {
                     @Override

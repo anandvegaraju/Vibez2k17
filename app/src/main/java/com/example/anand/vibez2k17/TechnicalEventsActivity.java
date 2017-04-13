@@ -24,7 +24,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         Intent i = getIntent();
         phonenumber = i.getStringExtra("phonenumber");
 
-        counterstrike = (Button)findViewById(R.id.counterstrike);
+        counterstrike = (Button)findViewById(R.id.volleyballinterbutton);
         caed = (Button)findViewById(R.id.caedmbutton);
         thunt = (Button)findViewById(R.id.treasurehuntbutton);
         minimilitia = (Button)findViewById(R.id.minimilitiabutton);
@@ -38,7 +38,50 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         viewname = button.getText().toString();
         Intent gotoevent = new Intent(TechnicalEventsActivity.this,EventTemplateActivity.class);
         gotoevent.putExtra("phonenumber",phonenumber);
-        gotoevent.putExtra("eventname",viewname);
+        gotoevent.putExtra("eventnamee",viewname);
+        if (viewname.equalsIgnoreCase("Counter Strike")) {
+            gotoevent.putExtra("details","Counter strike 1.6 with team of 4");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","counterstrike");
+        }else if(viewname.equalsIgnoreCase("CAED modelling")){
+            gotoevent.putExtra("details","The traditional cricket format.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","caedmodelling");
+        }else if(viewname.equalsIgnoreCase("Treasure Hunt")){
+            gotoevent.putExtra("details","Catch and throw ball over the net");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","treasurehunt");
+        }else if(viewname.equalsIgnoreCase("Mini Militia")){
+            gotoevent.putExtra("details","Android game - LAN based");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","minimilitia");
+        }else if(viewname.equalsIgnoreCase("Debugging")){
+            gotoevent.putExtra("details","Correct the obfuscated code.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","debugging");
+        }else if(viewname.equalsIgnoreCase("Pick and Speak")){
+            gotoevent.putExtra("details","Speak about a randomly chosen topic");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","pickandspeak");
+        }else if(viewname.equalsIgnoreCase("Coding")){
+            gotoevent.putExtra("details","You know what it is");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","coding");
+        }
         startActivity(gotoevent);
     }
 }

@@ -24,7 +24,7 @@ public class SportEventsActivity extends AppCompatActivity {
         Intent i = getIntent();
         phonenumber = i.getStringExtra("phonenumber");
 
-        shcricket = (Button)findViewById(R.id.counterstrike);
+        shcricket = (Button)findViewById(R.id.volleyballinterbutton);
         lcricket = (Button)findViewById(R.id.realcricketbutton);
         tball = (Button)findViewById(R.id.throwballbutton);
         vball = (Button)findViewById(R.id.volleyballbutton);
@@ -38,7 +38,52 @@ public class SportEventsActivity extends AppCompatActivity {
         viewname = button.getText().toString();
         Intent gotoevent = new Intent(SportEventsActivity.this,EventTemplateActivity.class);
         gotoevent.putExtra("phonenumber",phonenumber);
-        gotoevent.putExtra("eventname",viewname);
+        gotoevent.putExtra("eventnamee",viewname);
+        //
+        if (viewname.equalsIgnoreCase("Short Cricket")) {
+            gotoevent.putExtra("details","Cricket with reduced overs and players.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","shortcricket");
+        }else if(viewname.equalsIgnoreCase("Long cricket")){
+            gotoevent.putExtra("details","The traditional cricket format.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","longcricket");
+        }else if(viewname.equalsIgnoreCase("Throwball")){
+            gotoevent.putExtra("details","Catch and throw ball over the net");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","throwball");
+        }else if(viewname.equalsIgnoreCase("Volleyball")){
+            gotoevent.putExtra("details","Volleyball as we know it");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","volleyball");
+        }else if(viewname.equalsIgnoreCase("Kabbadi")){
+            gotoevent.putExtra("details","Kabaddi like we know");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","kabaddi");
+        }else if(viewname.equalsIgnoreCase("Badminton singles")){
+            gotoevent.putExtra("details","Solo badminton");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","badmintonsingles");
+        }else if(viewname.equalsIgnoreCase("Badminton doubles")){
+            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("eventname","badmintondoubles");
+        }
+
         startActivity(gotoevent);
     }
 }

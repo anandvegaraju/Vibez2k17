@@ -21,7 +21,7 @@
 
 
             <Button
-                android:id="@+id/counterstrike"
+                android:id="@+id/volleyballinterbutton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"

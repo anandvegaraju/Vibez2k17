@@ -30,7 +30,7 @@
             <TextView
                 android:id="@+id/eventdetailhead"
                 android:layout_width="match_parent"
-                android:layout_height="60dip"
+                android:layout_height="80dip"
                 android:fontFamily="casual"
                 android:text="Details"
                 android:textAlignment="viewStart"
