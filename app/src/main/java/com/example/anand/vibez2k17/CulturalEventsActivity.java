@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class CulturalEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button grpdance, solodance, grpsong, solosong, madads, fashionshow, dumbfuck, shortfilm, photography, beatboxing, mimcry, pencilsketch;
+    Button grpdance, solodance, grpsong, solosong, fusionsong, fashionshow, rangoli, shortfilm, photography, beatboxing, mehandi, pencilsketch, collage, facepainting, cookwofire;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,14 +30,17 @@ public class CulturalEventsActivity extends AppCompatActivity {
         solodance = (Button)findViewById(R.id.solodancebutton);
         grpsong = (Button)findViewById(R.id.groupsongbutton);
         solosong = (Button)findViewById(R.id.solosongbutton);
-        madads = (Button)findViewById(R.id.retardedshowbutton);
+        fusionsong = (Button)findViewById(R.id.fusionsong);
         fashionshow = (Button)findViewById(R.id.fashionshowbutton);
-        dumbfuck = (Button)findViewById(R.id.dumbfucksbutton);
+        rangoli = (Button)findViewById(R.id.rangolibutton);
         shortfilm = (Button)findViewById(R.id.terriblefilmsbutton);
         photography = (Button)findViewById(R.id.photographybutton);
         beatboxing = (Button)findViewById(R.id.shitboxingbutton);
-        mimcry = (Button)findViewById(R.id.lessiqshowbutton);
+        mehandi = (Button)findViewById(R.id.mehandi);
         pencilsketch = (Button)findViewById(R.id.pencilsketchbutton);
+        collage = (Button)findViewById(R.id.collage);
+        facepainting = (Button)findViewById(R.id.facepainting);
+        cookwofire = (Button)findViewById(R.id.cooking);
 
 
     }
@@ -50,77 +53,96 @@ public class CulturalEventsActivity extends AppCompatActivity {
         gotoevent.putExtra("eventnamee",viewname);
         //
         if (viewname.equalsIgnoreCase("Group Dance")) {
-            gotoevent.putExtra("details","Cricket with reduced overs and players.");
+            gotoevent.putExtra("details","Step up ;)");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 9 teammates");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","groupdance");
         }else if(viewname.equalsIgnoreCase("Solo Dance")){
-            gotoevent.putExtra("details","The traditional cricket format.");
+            gotoevent.putExtra("details","Showcase your awesome dance moves");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","solodance");
         }else if(viewname.equalsIgnoreCase("Group Song")){
-            gotoevent.putExtra("details","Catch and throw ball over the net");
+            gotoevent.putExtra("details","It's all about coordination!");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 5 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","groupsong");
         }else if(viewname.equalsIgnoreCase("Solo Song")){
-            gotoevent.putExtra("details","Volleyball as we know it");
+            gotoevent.putExtra("details","Showcase your talent");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","solosong");
-        }else if(viewname.equalsIgnoreCase("MADADS")){
-            gotoevent.putExtra("details","Kabaddi like we know");
+        }else if(viewname.equalsIgnoreCase("Group song fusion")){
+            gotoevent.putExtra("details","Karaoke");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","madads");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 8 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","fusionsong");
         }else if(viewname.equalsIgnoreCase("Fashion show")){
-            gotoevent.putExtra("details","Solo badminton");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("details","");
+            gotoevent.putExtra("timings","Evening");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 12 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","fashionshow");
-        }else if(viewname.equalsIgnoreCase("Dumb Charades")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+        }else if(viewname.equalsIgnoreCase("Rangoli")){
+            gotoevent.putExtra("details","A colorful Indian artform");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","dumbcharades");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","rangoli");
         }else if(viewname.equalsIgnoreCase("Short Film")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+            gotoevent.putExtra("details","Awaken the talented filmmaker in you .");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","shortfilm");
         }else if(viewname.equalsIgnoreCase("Photography")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+            gotoevent.putExtra("details","Capture the beauty of the world through lens.\nTopic will be given on spot");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","photography");
         }else if(viewname.equalsIgnoreCase("Beat Boxing")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+            gotoevent.putExtra("details","A form of vocal percussion primarily involving the art of mimicking\n drum machines using one's mouth, lips, tongue, and voice.");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","beatboxing");
-        }else if(viewname.equalsIgnoreCase("Mimic Show")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+        }else if(viewname.equalsIgnoreCase("Mehandi")){
+            gotoevent.putExtra("details","Indian art.");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","mimicry");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","mehandi");
         }else if(viewname.equalsIgnoreCase("Pencil Sketch")){
+            gotoevent.putExtra("details","Showcase your talent with a pencil.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","pencilsketch");
+        }else if(viewname.equalsIgnoreCase("Collage")){
+            gotoevent.putExtra("details","The theme is Indian army.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","collage");
+        }else if(viewname.equalsIgnoreCase("Face Painting")){
+            gotoevent.putExtra("details","Face painting is a fun way to dress up—no costume required ;)");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","facepainting");
+
+        }else if(viewname.equalsIgnoreCase("Cooking without fire")){
             gotoevent.putExtra("details","Badminton with 2 players in a side.");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","pencilsketch");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
+            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("eventname","cooking");
         }
 
 

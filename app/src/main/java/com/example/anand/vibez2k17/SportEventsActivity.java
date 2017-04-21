@@ -70,14 +70,14 @@ public class SportEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
             gotoevent.putExtra("eventname","kabaddi");
-        }else if(viewname.equalsIgnoreCase("Badminton singles")){
-            gotoevent.putExtra("details","Solo badminton");
+        }else if(viewname.equalsIgnoreCase("Carrom doubles")){
+            gotoevent.putExtra("details","Carrom (girls)");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","badmintonsingles");
+            gotoevent.putExtra("eventname","carrom");
         }else if(viewname.equalsIgnoreCase("Badminton doubles")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.");
+            gotoevent.putExtra("details","Badminton with 2 players in a side.\n(girls only)");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");

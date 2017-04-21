@@ -36,49 +36,19 @@
                 tools:layout_editor_absoluteY="16dp" />
 
             <Button
-                android:id="@+id/caedmbutton"
+                android:id="@+id/bestmanager"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
-                android:text="CAED modelling"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="147dp"
-                tools:layout_editor_absoluteY="72dp" />
-
-            <Button
-                android:id="@+id/treasurehuntbutton"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="OnClick"
-                android:text="Treasure Hunt"
+                android:text="Best Manager"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="128dp" />
-
-            <Button
-                android:id="@+id/minimilitiabutton"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="OnClick"
-                android:text="Mini Militia"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="156dp"
-                tools:layout_editor_absoluteY="176dp" />
 
             <Button
                 android:id="@+id/debuggingbutton"

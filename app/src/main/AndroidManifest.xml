@@ -23,7 +23,6 @@
         <activity android:name=".MainMenu" android:screenOrientation="portrait"/>
         <activity android:name=".EventMenuActivity" android:screenOrientation="portrait"/>
         <activity android:name=".CulturalEventsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".IntercollegeEventsActivity" android:screenOrientation="portrait"/>
         <activity android:name=".SportEventsActivity" android:screenOrientation="portrait"/>
         <activity android:name=".TechnicalEventsActivity" android:screenOrientation="portrait"/>
         <activity android:name=".ContactListActivity" android:screenOrientation="portrait"/>

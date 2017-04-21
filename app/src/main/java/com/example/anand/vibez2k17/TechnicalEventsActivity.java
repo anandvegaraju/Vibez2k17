@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class TechnicalEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button counterstrike, caed, thunt, minimilitia, debugging, pands, coding;
+    Button counterstrike, thunt, debugging, pands, coding;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,9 +25,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         phonenumber = i.getStringExtra("phonenumber");
 
         counterstrike = (Button)findViewById(R.id.volleyballinterbutton);
-        caed = (Button)findViewById(R.id.caedmbutton);
-        thunt = (Button)findViewById(R.id.treasurehuntbutton);
-        minimilitia = (Button)findViewById(R.id.minimilitiabutton);
+        thunt = (Button)findViewById(R.id.bestmanager);
         debugging = (Button)findViewById(R.id.debuggingbutton);
         pands = (Button)findViewById(R.id.wtfisthisbutton);
         coding = (Button)findViewById(R.id.codingbutton);
@@ -45,24 +43,12 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
             gotoevent.putExtra("eventname","counterstrike");
-        }else if(viewname.equalsIgnoreCase("CAED modelling")){
-            gotoevent.putExtra("details","The traditional cricket format.");
+        }else if(viewname.equalsIgnoreCase("Best Manager")){
+            gotoevent.putExtra("details","Conducted by MBA dept");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","caedmodelling");
-        }else if(viewname.equalsIgnoreCase("Treasure Hunt")){
-            gotoevent.putExtra("details","Catch and throw ball over the net");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","treasurehunt");
-        }else if(viewname.equalsIgnoreCase("Mini Militia")){
-            gotoevent.putExtra("details","Android game - LAN based");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
-            gotoevent.putExtra("eventname","minimilitia");
+            gotoevent.putExtra("eventname","bestmanager");
         }else if(viewname.equalsIgnoreCase("Debugging")){
             gotoevent.putExtra("details","Correct the obfuscated code.");
             gotoevent.putExtra("timings","9am to 1pm");

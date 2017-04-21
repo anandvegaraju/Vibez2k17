@@ -14,7 +14,7 @@ import android.widget.ImageButton;
  */
 
 public class EventMenuActivity extends AppCompatActivity implements View.OnTouchListener {
-    ImageButton culturalbutton, technicalbutton, sportsbutton, intercolgbutton;
+    ImageButton culturalbutton, technicalbutton, sportsbutton;
     String phonenumber;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -31,7 +31,6 @@ public class EventMenuActivity extends AppCompatActivity implements View.OnTouch
         culturalbutton = (ImageButton)findViewById(R.id.culturalcat_button);
         technicalbutton = (ImageButton)findViewById(R.id.gallerybutton);
         sportsbutton = (ImageButton)findViewById(R.id.sportscat_button);
-        intercolgbutton = (ImageButton)findViewById(R.id.intercolg_button);
 
         culturalbutton.setOnClickListener(
                 new View.OnClickListener() {
@@ -55,16 +54,7 @@ public class EventMenuActivity extends AppCompatActivity implements View.OnTouch
                 }
         );
 
-        intercolgbutton.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Intent gotointercolg = new Intent(EventMenuActivity.this,IntercollegeEventsActivity.class);
-                        gotointercolg.putExtra("phonenumber",phonenumber);
-                        startActivity(gotointercolg);
-                    }
-                }
-        );
+
 
         sportsbutton.setOnClickListener(
                 new View.OnClickListener() {
@@ -80,7 +70,6 @@ public class EventMenuActivity extends AppCompatActivity implements View.OnTouch
 
         culturalbutton.setOnTouchListener(this);
         technicalbutton.setOnTouchListener(this);
-        intercolgbutton.setOnTouchListener(this);
         sportsbutton.setOnTouchListener(this);
 
 

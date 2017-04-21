@@ -81,13 +81,13 @@
                 tools:layout_editor_absoluteY="176dp" />
 
             <Button
-                android:id="@+id/retardedshowbutton"
+                android:id="@+id/fusionsong"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
-                android:text="MADADS"
+                android:text="Group song fusion"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
@@ -111,13 +111,13 @@
                 tools:layout_editor_absoluteY="288dp" />
 
             <Button
-                android:id="@+id/dumbfucksbutton"
+                android:id="@+id/rangolibutton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
-                android:text="Dumb charades"
+                android:text="Rangoli"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
@@ -175,13 +175,13 @@
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
-                android:id="@+id/lessiqshowbutton"
+                android:id="@+id/mehandi"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
-                android:text="Mimic show"
+                android:text="Mehandi"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
@@ -205,6 +205,45 @@
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
+
+            <Button
+                android:id="@+id/collage"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:onClick="OnClick"
+                android:text="Collage"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="36sp" />
+
+            <Button
+                android:id="@+id/facepainting"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:onClick="OnClick"
+                android:text="Face Painting"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cooking"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:onClick="OnClick"
+                android:text="Cooking without fire"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="36sp"
+                android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>
 
