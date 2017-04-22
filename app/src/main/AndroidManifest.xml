@@ -30,6 +30,7 @@
         <activity android:name=".AlumniDB" android:screenOrientation="portrait"/>
         <activity android:name=".EventTemplateActivity" android:screenOrientation="portrait"/>
         <activity android:name=".EventRegActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".CreditsActivity" android:screenOrientation="portrait"/>
 
 
 

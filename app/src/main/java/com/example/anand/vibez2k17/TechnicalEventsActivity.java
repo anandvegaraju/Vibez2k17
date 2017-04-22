@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class TechnicalEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button counterstrike, thunt, debugging, pands, coding;
+    Button counterstrike, thunt, debugging, pands, coding, caedm, minimilitia;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +29,8 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         debugging = (Button)findViewById(R.id.debuggingbutton);
         pands = (Button)findViewById(R.id.wtfisthisbutton);
         coding = (Button)findViewById(R.id.codingbutton);
+        caedm = (Button)findViewById(R.id.caed);
+        minimilitia = (Button)findViewById(R.id.minimilitia);
     }
 
     public void OnClick(View view){
@@ -41,32 +43,44 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","Counter strike 1.6 with team of 4");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","counterstrike");
         }else if(viewname.equalsIgnoreCase("Best Manager")){
             gotoevent.putExtra("details","Conducted by MBA dept");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","bestmanager");
         }else if(viewname.equalsIgnoreCase("Debugging")){
             gotoevent.putExtra("details","Correct the obfuscated code.");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","debugging");
         }else if(viewname.equalsIgnoreCase("Pick and Speak")){
             gotoevent.putExtra("details","Speak about a randomly chosen topic");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","pickandspeak");
         }else if(viewname.equalsIgnoreCase("Coding")){
             gotoevent.putExtra("details","You know what it is");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : Rs 500\n First place : Rs 3000\nSecond place : Rs 1500");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","coding");
+        }else if(viewname.equalsIgnoreCase("CAED Modelling")){
+            gotoevent.putExtra("details","You'll be asked to model 3d or 2d components.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("eventname","caedmodelling");
+        }else if(viewname.equalsIgnoreCase("Mini Militia")){
+            gotoevent.putExtra("details","Mobile gaming.");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. No hacks.");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("eventname","minimilitia");
         }
         startActivity(gotoevent);
     }

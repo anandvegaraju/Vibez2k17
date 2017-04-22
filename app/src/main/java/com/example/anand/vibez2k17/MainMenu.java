@@ -69,7 +69,8 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(),"Anand Vegaraju\nBharat VK",Toast.LENGTH_LONG).show();
+                        Intent gotocredits = new Intent(MainMenu.this,CreditsActivity.class);
+                        startActivity(gotocredits);
                     }
                 }
         );

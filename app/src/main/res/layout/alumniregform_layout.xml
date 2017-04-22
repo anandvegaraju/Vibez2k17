@@ -22,7 +22,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/bharatimage"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:scaleType="fitXY"

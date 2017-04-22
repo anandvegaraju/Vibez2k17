@@ -20,11 +20,24 @@ public class ContactListActivity extends AppCompatActivity {
     String[] web = {
             "App team : Anand",
             "App team : Bharat",
+            "Fest coordinator",
+            "Faculty : Prof Trupthi",
+            "Coordinator : Kushal",
+            "Coordinator : Deepak",
+            "Coordinator : Uday",
+            "Coordinator : Nitin"
+
 
     } ;
     String[] contactlist = {
             "+919483526746",
-            "+918553502771"
+            "+918553502771",
+            "+918867562618",
+            "+919036393116",
+            "+919738586117",
+            "+918147724401",
+            "+919739465976",
+            "+918861604042"
     } ;
 
     @Override
