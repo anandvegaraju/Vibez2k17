@@ -33,7 +33,7 @@ public class EventRegActivity extends AppCompatActivity {
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
                         tmp = dataSnapshot.getValue(String.class);
-                        tmp += phonenumber;
+                        tmp += " " + phonenumber;
                         eventref.setValue(tmp);
                     }
 

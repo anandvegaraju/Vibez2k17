@@ -20,8 +20,8 @@ public class ContactListActivity extends AppCompatActivity {
     String[] web = {
             "App team : Anand",
             "App team : Bharat",
-            "Fest coordinator",
-            "Faculty : Prof Trupthi",
+            "Coordinator : Manu",
+            "Fest : Prof.Trupthi",
             "Coordinator : Kushal",
             "Coordinator : Deepak",
             "Coordinator : Uday",

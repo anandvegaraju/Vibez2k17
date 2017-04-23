@@ -36,21 +36,6 @@
                 tools:layout_editor_absoluteY="16dp" />
 
             <Button
-                android:id="@+id/realcricketbutton"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="OnClick"
-                android:text="Long Cricket"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="147dp"
-                tools:layout_editor_absoluteY="72dp" />
-
-            <Button
                 android:id="@+id/throwballbutton"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="fill_parent"

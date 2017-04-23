@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class SportEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button shcricket, lcricket, tball, vball, kabaddi, bads, badd;
+    Button shcricket, tball, vball, kabaddi, bads, badd;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,6 @@ public class SportEventsActivity extends AppCompatActivity {
         phonenumber = i.getStringExtra("phonenumber");
 
         shcricket = (Button)findViewById(R.id.volleyballinterbutton);
-        lcricket = (Button)findViewById(R.id.realcricketbutton);
         tball = (Button)findViewById(R.id.throwballbutton);
         vball = (Button)findViewById(R.id.volleyballbutton);
         kabaddi = (Button)findViewById(R.id.kabaddibutton);
@@ -46,12 +45,6 @@ public class SportEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 7+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","shortcricket");
-        }else if(viewname.equalsIgnoreCase("Long cricket")){
-            gotoevent.putExtra("details","The traditional cricket format.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
-            gotoevent.putExtra("eventname","longcricket");
         }else if(viewname.equalsIgnoreCase("Throwball")){
             gotoevent.putExtra("details","Catch and throw ball over the net");
             gotoevent.putExtra("timings","9am to 1pm");

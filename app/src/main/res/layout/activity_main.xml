@@ -1,52 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<ScrollView android:layout_height="fill_parent" android:layout_width="fill_parent" android:fillViewport="true"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
+
 
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent" android:layout_height="match_parent">
+        android:layout_width="match_parent" android:layout_height="wrap_content">
 
 
         <com.digits.sdk.android.DigitsAuthButton
             android:id="@+id/auth_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
+            android:textAlignment="viewStart"
+            android:layout_below="@+id/imageView2"
             android:layout_centerHorizontal="true" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:alpha="0.75"
-            app:srcCompat="@drawable/vibez"
-            android:layout_above="@+id/textView"
-            android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="300dp"
+        android:layout_alignParentStart="true"
+        android:alpha="0.75"
+        app:srcCompat="@drawable/vibez"
+        android:layout_alignParentEnd="true" />
 
-        <com.digits.sdk.android.DigitsAuthButton
-            android:id="@+id/auth_button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="86dp"
-            android:textAlignment="center" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_above="@+id/auth_button"
-            android:layout_centerHorizontal="true"
-            android:fontFamily="cursive"
-            android:text="Or"
-            android:textColor="@color/primary_text_material_light"
-            android:textSize="32sp"
-            android:textStyle="bold" />
+    <com.digits.sdk.android.DigitsAuthButton
+        android:id="@+id/auth_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auth_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:fontFamily="casual"
+        android:textAlignment="center" />
 
 
-    </RelativeLayout>
+</RelativeLayout>
 
-</ScrollView>
