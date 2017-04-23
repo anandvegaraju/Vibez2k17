@@ -22,8 +22,8 @@ android {
         applicationId "com.vegaraju.anand.vibez2k17"
         minSdkVersion 17
         targetSdkVersion 25
-        versionCode 5
-        versionName "1.5"
+        versionCode 6
+        versionName "1.6"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
