@@ -1,11 +1,12 @@
 package com.vegaraju.anand.vibez2k17;
 
 
+import android.content.ComponentName;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.ImageButton;
 
@@ -55,10 +56,15 @@ public class CreditsActivity extends AppCompatActivity {
     }
 
     void openWhatsappContact(String number) {
-        Uri uri = Uri.parse("smsto:" + number);
-        Intent i = new Intent(Intent.ACTION_SENDTO, uri);
-        i.setPackage("com.whatsapp");
-        startActivity(Intent.createChooser(i, ""));
+
+
+
+        //
+        Intent sendIntent = new Intent("android.intent.action.MAIN");
+        sendIntent.setComponent(new ComponentName("com.whatsapp","com.whatsapp.Conversation"));
+        sendIntent.putExtra("jid", PhoneNumberUtils.stripSeparators(number.substring(1))+"@s.whatsapp.net");//phone number without "+" prefix
+
+        startActivity(sendIntent);
     }
 
 
