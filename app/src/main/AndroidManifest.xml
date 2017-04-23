@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.anand.vibez2k17">
+    package="com.vegaraju.anand.vibez2k17">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+        <activity android:name="com.vegaraju.anand.vibez2k17.MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,19 +18,19 @@
             </intent-filter>
 
         </activity>
-        <activity android:name=".UserRegistrationActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MenuActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".MainMenu" android:screenOrientation="portrait"/>
-        <activity android:name=".EventMenuActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".CulturalEventsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".SportEventsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".TechnicalEventsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".ContactListActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".AlumniRegActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".AlumniDB" android:screenOrientation="portrait"/>
-        <activity android:name=".EventTemplateActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".EventRegActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".CreditsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.UserRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.MenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.MainMenu" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.EventMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.CulturalEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.SportEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.TechnicalEventsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.ContactListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.AlumniRegActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.AlumniDB" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.EventTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.EventRegActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.vegaraju.anand.vibez2k17.CreditsActivity" android:screenOrientation="portrait"/>
 
 
 

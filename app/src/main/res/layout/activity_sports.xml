@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.anand.vibez2k17.SportEventsActivity"
+    tools:context="com.vegaraju.anand.vibez2k17.SportEventsActivity"
     android:background="@drawable/bg">
 
     <ScrollView

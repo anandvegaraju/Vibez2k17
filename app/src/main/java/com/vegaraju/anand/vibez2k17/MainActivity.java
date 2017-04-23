@@ -1,4 +1,4 @@
-package com.example.anand.vibez2k17;
+package com.vegaraju.anand.vibez2k17;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

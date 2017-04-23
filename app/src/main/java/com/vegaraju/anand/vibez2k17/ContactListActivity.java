@@ -1,4 +1,4 @@
-package com.example.anand.vibez2k17;
+package com.vegaraju.anand.vibez2k17;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,7 +8,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 /**
  * Created by Anand on 08-04-2017.

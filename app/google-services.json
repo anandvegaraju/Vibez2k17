@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:741614968471:android:18add8ba33cd63bc",
         "android_client_info": {
-          "package_name": "com.example.anand.vibez2k17"
+          "package_name": "com.vegaraju.anand.vibez2k17"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "741614968471-uiclkmmbh445i5hbrkv33hddsv976rvs.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.anand.vibez2k17",
+            "package_name": "com.vegaraju.anand.vibez2k17",
             "certificate_hash": "f9505350dbff1394f44b3bc797a47b75f35f8f07"
           }
         },

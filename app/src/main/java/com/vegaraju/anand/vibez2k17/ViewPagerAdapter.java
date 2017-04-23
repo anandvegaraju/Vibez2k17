@@ -1,4 +1,4 @@
-package com.example.anand.vibez2k17;
+package com.vegaraju.anand.vibez2k17;
 
 import android.content.Context;
 import android.support.v4.view.PagerAdapter;
