@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class TechnicalEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button counterstrike, thunt, debugging, pands, coding, caedm, minimilitia;
+    Button counterstrike, thunt, debugging, pands, coding, caedm, minimilitia, cktdbg;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +31,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         coding = (Button)findViewById(R.id.codingbutton);
         caedm = (Button)findViewById(R.id.caed);
         minimilitia = (Button)findViewById(R.id.minimilitia);
+        cktdbg = (Button)findViewById(R.id.cktdbg);
     }
 
     public void OnClick(View view){
@@ -51,12 +52,12 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","bestmanager");
-        }else if(viewname.equalsIgnoreCase("Debugging")){
-            gotoevent.putExtra("details","Correct the obfuscated code.");
+        }else if(viewname.equalsIgnoreCase("NFS")){
+            gotoevent.putExtra("details","Need for speed (LAN based multiplayer)");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
+            gotoevent.putExtra("rules","1. No Hacks\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
-            gotoevent.putExtra("eventname","debugging");
+            gotoevent.putExtra("eventname","nfs");
         }else if(viewname.equalsIgnoreCase("Pick and Speak")){
             gotoevent.putExtra("details","Speak about a randomly chosen topic");
             gotoevent.putExtra("timings","9am to 1pm");
@@ -81,6 +82,12 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. No hacks.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","minimilitia");
+        }else if(viewname.equalsIgnoreCase("Circuit Debugging")){
+            gotoevent.putExtra("details","TBA");
+            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("rules","1. No foul play\n2. No mobile devices allowed.");
+            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("eventname","cktdbg");
         }
         startActivity(gotoevent);
     }
