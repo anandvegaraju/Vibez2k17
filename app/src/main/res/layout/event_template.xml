@@ -48,7 +48,7 @@
                 android:text="This competition will provide an opportunity for the younger generation to showcase their talent in different fields and will be a stepping-stone for their success at the State and National levels."
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/white"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
             <View
                 android:id="@+id/lineview"
@@ -75,14 +75,14 @@
 
             <TextView
                 android:id="@+id/eventtimings"
-                android:layout_width="280dip"
-                android:layout_height="70dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="9:00am to 12:00 pm"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="15sp"></TextView>
+                android:textSize="17sp"></TextView>
 
             <View
                 android:id="@+id/lineview1"
@@ -105,14 +105,14 @@
 
             <TextView
                 android:id="@+id/eventfee"
-                android:layout_width="280dip"
-                android:layout_height="70dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="Entry Fee:              Rs. 300/-\nFirst Prize:            Rs.1000/-\nSecond Price:       Rs. 500/-"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="15sp"></TextView>
+                android:textSize="17sp"></TextView>
 
             <View
                 android:id="@+id/lineview2"
@@ -136,14 +136,14 @@
 
             <TextView
                 android:id="@+id/eventrules"
-                android:layout_width="280dip"
-                android:layout_height="75dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:text="1. You do not talk about Fight Club \n2. You do not talk about Fight Club \n3. Someone yells stop, goes limp, taps out, the fight is over\n4. Only two guys to a fight"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="15sp"></TextView>
+                android:textSize="17sp"></TextView>
 
             <View
                 android:id="@+id/lineview3"
