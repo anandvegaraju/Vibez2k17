@@ -42,9 +42,9 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         gotoevent.putExtra("eventnamee",viewname);
         if (viewname.equalsIgnoreCase("Counter Strike")) {
             gotoevent.putExtra("details","Counter strike 1.6 with team of 4");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","10am 28th april 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("fee","Entry fee : Rs 50 per member\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","counterstrike");
         }else if(viewname.equalsIgnoreCase("Best Manager")){
             gotoevent.putExtra("details","Conducted by MBA dept");
@@ -54,9 +54,9 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventname","bestmanager");
         }else if(viewname.equalsIgnoreCase("NFS")){
             gotoevent.putExtra("details","Need for speed (LAN based multiplayer)");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","10am 28th april 2017");
             gotoevent.putExtra("rules","1. No Hacks\n2. Play fairly.");
-            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("fee","Entry fee : Rs 50 per head\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","nfs");
         }else if(viewname.equalsIgnoreCase("Pick and Speak")){
             gotoevent.putExtra("details","Speak about a randomly chosen topic");
@@ -78,9 +78,9 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventname","caedmodelling");
         }else if(viewname.equalsIgnoreCase("Mini Militia")){
             gotoevent.putExtra("details","Mobile gaming.");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","10am 28th April 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. No hacks.");
-            gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
+            gotoevent.putExtra("fee","Entry fee : Rs 50 per head\n First place : TBD\nSecond place : TBD");
             gotoevent.putExtra("eventname","minimilitia");
         }else if(viewname.equalsIgnoreCase("Circuit Debugging")){
             gotoevent.putExtra("details","TBA");
@@ -92,3 +92,4 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         startActivity(gotoevent);
     }
 }
+// 9731813442

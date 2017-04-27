@@ -56,13 +56,13 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","Step up! Duration of performance should be 6 minutes.;)");
             gotoevent.putExtra("timings","5th May 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 10 teammates\n 3. Carry 2 pendrives containing song to avoid issues\n 4. No Vulgarity\n4. Judgement based on several factors.");
-            gotoevent.putExtra("fee","Entry fee : Rs 1000\n First place : Rs 10000\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 1000\n First place : Rs 10000\n");
             gotoevent.putExtra("eventname","groupdance");
         }else if(viewname.equalsIgnoreCase("Solo Dance")){
             gotoevent.putExtra("details","Showcase your awesome dance moves\n Dance duration is 5 minutes");
             gotoevent.putExtra("timings","5th May 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant\n3. Carry 2 pendrives containing song to avoid issues\n4. Judgement based on several factors.");
-            gotoevent.putExtra("fee","Entry fee : Rs 300\n First place : Rs 3000\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 300\n First place : Rs 3000\n");
             gotoevent.putExtra("eventname","solodance");
         }else if(viewname.equalsIgnoreCase("Group Song")){
             gotoevent.putExtra("details","It's all about coordination!");
