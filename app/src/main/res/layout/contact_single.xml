@@ -15,7 +15,7 @@
             android:layout_height="58dp"
             android:fontFamily="casual"
             android:textColor="@color/primary_text_material_light"
-            android:textSize="28sp" />
+            android:textSize="23sp" />
 
         <ImageView
             android:id="@+id/img"

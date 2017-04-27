@@ -53,13 +53,13 @@ public class CulturalEventsActivity extends AppCompatActivity {
         gotoevent.putExtra("eventnamee",viewname);
         //
         if (viewname.equalsIgnoreCase("Group Dance")) {
-            gotoevent.putExtra("details","Step up! Duration of performance should be 6 minutes.;)");
+            gotoevent.putExtra("details","Step up! Duration of performance should be 4+2 minutes.;)");
             gotoevent.putExtra("timings","5th May 2017");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 10 teammates\n 3. Carry 2 pendrives containing song to avoid issues\n 4. No Vulgarity\n4. Judgement based on several factors.");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 10+2 teammates\n 3. Carry 2 pendrives containing song to avoid issues\n 4. No Vulgarity\n4. Judgement based on several factors.");
             gotoevent.putExtra("fee","Entry fee : Rs 1000\n First place : Rs 10000\n");
             gotoevent.putExtra("eventname","groupdance");
         }else if(viewname.equalsIgnoreCase("Solo Dance")){
-            gotoevent.putExtra("details","Showcase your awesome dance moves\n Dance duration is 5 minutes");
+            gotoevent.putExtra("details","Showcase your awesome dance moves\n Dance duration is 3+2 minutes");
             gotoevent.putExtra("timings","5th May 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant\n3. Carry 2 pendrives containing song to avoid issues\n4. Judgement based on several factors.");
             gotoevent.putExtra("fee","Entry fee : Rs 300\n First place : Rs 3000\n");
@@ -83,16 +83,16 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","fusionsong");
         }else if(viewname.equalsIgnoreCase("Fashion show")){
-            gotoevent.putExtra("details","");
+            gotoevent.putExtra("details","Duration : 8+2 minutes.");
             gotoevent.putExtra("timings","Evening");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 12 teammates.");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 10+2 teammates.\n3. One team per college\n4. Theme based\n5. Provide songs in 2 pendrives prior to the event.\n6. No vulgarity allowed\n7. Candidates should remove their own set pieces");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","fashionshow");
         }else if(viewname.equalsIgnoreCase("Rangoli")){
             gotoevent.putExtra("details","A colorful Indian artform");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("timings","10am 3rd May 2017");
+            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Max of 2 teammates.\n3. No chalks allowed\n 4. No salt/rice/flowers\n5. Only pure rangoli colors allowed\n6. No moulds.");
+            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","rangoli");
         }else if(viewname.equalsIgnoreCase("Short Film")){
             gotoevent.putExtra("details","Awaken the talented filmmaker in you .");
@@ -101,40 +101,40 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","shortfilm");
         }else if(viewname.equalsIgnoreCase("Photography")){
-            gotoevent.putExtra("details","Capture the beauty of the world through lens.\nTopic will be given on spot");
+            gotoevent.putExtra("details","Two categories : DSLR and mobile.\nCapture the beauty of the world through lens.\nTopic will be given on spot");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant\n");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("rules","1. Only one participant\n2. Image should be in JPEG format\n3. No filters\n4. On spot registration allowed\n5. Theme will be given on spot.\n6. For mobile photography camera should be of min 10mp\n7. No filters\n8. 3 hour event\n9. Judge's decision is final ");
+            gotoevent.putExtra("fee","Entry fee : Contact the coordinator\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","photography");
         }else if(viewname.equalsIgnoreCase("Beat Boxing")){
             gotoevent.putExtra("details","A form of vocal percussion primarily involving the art of mimicking\n drum machines using one's mouth, lips, tongue, and voice.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("timings","6-7 May 2017");
+            gotoevent.putExtra("rules","1. One minute showcase\n2. Only one participant\n3. No profanity allowed\n4. No musical instruments");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","beatboxing");
         }else if(viewname.equalsIgnoreCase("Mehandi")){
             gotoevent.putExtra("details","Indian art.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("timings","12pm 3rd May 2017");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates\n3. Duration will be 45 minutes\n4. No Indian/Arabic design\n5. Carry your own mehandi cone.\n6. No black cone");
+            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","mehandi");
         }else if(viewname.equalsIgnoreCase("Pencil Sketch")){
             gotoevent.putExtra("details","Showcase your talent with a pencil.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("timings","10am 3rd May 2017");
+            gotoevent.putExtra("rules","1. Duration : 45 minutes\n2. Only one participant.\n3. Theme will be given on spot\n4. No tracing\n5. No mobile devices allowed");
+            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","pencilsketch");
         }else if(viewname.equalsIgnoreCase("Collage")){
             gotoevent.putExtra("details","The theme is Indian army.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("timings","2pm 3rd May 2017");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Duration : 45 minutes\n4. News papers only\n5. Carry your own materials\n6. No scissors");
+            gotoevent.putExtra("fee","Entry fee : Rs 150\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","collage");
         }else if(viewname.equalsIgnoreCase("Face Painting")){
             gotoevent.putExtra("details","Face painting is a fun way to dress up—no costume required ;)");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("timings","12pm 3rd May 2017");
+            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Any concept allowed\n3. Get your own paints/brushes\n4. Use only face paints\n5. Bring a volunteer");
+            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","facepainting");
 
         }else if(viewname.equalsIgnoreCase("Cooking without fire")){

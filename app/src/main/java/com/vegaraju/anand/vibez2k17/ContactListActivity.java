@@ -29,7 +29,9 @@ public class ContactListActivity extends AppCompatActivity {
             "Bhuveshwari(Solo dance)",
             "Bhuveshwari(BeatBoxing)",
             "Faculty coordinator(Technical)",
-            "Yogananda (Technical"
+            "Yogananda (Technical",
+            "Suhas H(DSLR Photography)",
+            "Charan C (Mobile Photography)"
 
 
 
@@ -47,7 +49,8 @@ public class ContactListActivity extends AppCompatActivity {
             "+919900120619",
             "+919900120619",
             "+918105963010",
-            "+919731813442"
+            "+919731813442",
+            "+919738640150"
     } ;
 
     @Override
