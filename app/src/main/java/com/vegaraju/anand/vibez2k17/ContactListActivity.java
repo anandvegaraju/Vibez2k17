@@ -22,10 +22,12 @@ public class ContactListActivity extends AppCompatActivity {
             "App team : Bharat",
             "Coordinator : Manu",
             "Fest : Prof.Trupthi",
-            "Coordinator : Kushal",
-            "Coordinator : Deepak",
+            "Kushal(Short film)",
+            "Deepak(Short film)",
             "Coordinator : Uday",
-            "Coordinator : Nitin"
+            "Nitin(Cooking)",
+            "Bhuveshwari(Solo dance)",
+            "Bhuveshwari(BeatBoxing)"
 
 
     } ;
@@ -37,7 +39,9 @@ public class ContactListActivity extends AppCompatActivity {
             "+919738586117",
             "+918147724401",
             "+919739465976",
-            "+918861604042"
+            "+918861604042",
+            "+919900120619",
+            "+919900120619"
     } ;
 
     @Override

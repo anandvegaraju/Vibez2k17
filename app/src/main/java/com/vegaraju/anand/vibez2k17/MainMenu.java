@@ -146,7 +146,8 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(),"Coming soon",Toast.LENGTH_SHORT).show();
+                        Intent gotosponsor = new Intent(MainMenu.this,SponsorsScreenActivity.class);
+                        startActivity(gotosponsor);
                     }
                 }
         );

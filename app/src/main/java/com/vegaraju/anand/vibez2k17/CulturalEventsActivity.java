@@ -97,13 +97,13 @@ public class CulturalEventsActivity extends AppCompatActivity {
         }else if(viewname.equalsIgnoreCase("Short Film")){
             gotoevent.putExtra("details","Awaken the talented filmmaker in you .");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("rules","1. No foul play\n2. Duration : 10+2\n3. No vulgarity or beeps");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","shortfilm");
         }else if(viewname.equalsIgnoreCase("Photography")){
             gotoevent.putExtra("details","Capture the beauty of the world through lens.\nTopic will be given on spot");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant");
+            gotoevent.putExtra("rules","1. No foul play\n2. Only one participant\n");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","photography");
         }else if(viewname.equalsIgnoreCase("Beat Boxing")){
