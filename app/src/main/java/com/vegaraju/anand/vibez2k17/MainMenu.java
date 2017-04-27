@@ -63,7 +63,7 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
                 }
         );
 
-        // show credits
+        // goto credits page
         creditsbutton = (Button)findViewById(R.id.button2);
         creditsbutton.setOnClickListener(
                 new View.OnClickListener() {

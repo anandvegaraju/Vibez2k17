@@ -140,7 +140,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
         }else if(viewname.equalsIgnoreCase("Cooking without fire")){
             gotoevent.putExtra("details","Showcase your culinary skills but,\n with a catch. No stove or heating.");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Only for Sambhram students");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","cooking");
         }
