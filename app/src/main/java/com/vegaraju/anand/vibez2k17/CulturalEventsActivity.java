@@ -91,7 +91,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
         }else if(viewname.equalsIgnoreCase("Rangoli")){
             gotoevent.putExtra("details","A colorful Indian artform");
             gotoevent.putExtra("timings","10am 3rd May 2017");
-            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Max of 2 teammates.\n3. No chalks allowed\n 4. No salt/rice/flowers\n5. Only pure rangoli colors allowed\n6. No moulds.");
+            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Max of 2 teammates.\n3. No chalks allowed\n 4. No salt/rice/flowers\n5. Only pure rangoli colors allowed\n6. No moulds.\n7. Only 2 per college");
             gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","rangoli");
         }else if(viewname.equalsIgnoreCase("Short Film")){
@@ -115,32 +115,32 @@ public class CulturalEventsActivity extends AppCompatActivity {
         }else if(viewname.equalsIgnoreCase("Mehandi")){
             gotoevent.putExtra("details","Indian art.");
             gotoevent.putExtra("timings","12pm 3rd May 2017");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates\n3. Duration will be 45 minutes\n4. No Indian/Arabic design\n5. Carry your own mehandi cone.\n6. No black cone");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates\n3. Duration will be 45 minutes\n4. No Indian/Arabic design\n5. Carry your own mehandi cone.\n6. No black cone\n7. Only 2 per college");
             gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","mehandi");
         }else if(viewname.equalsIgnoreCase("Pencil Sketch")){
             gotoevent.putExtra("details","Showcase your talent with a pencil.");
             gotoevent.putExtra("timings","10am 3rd May 2017");
-            gotoevent.putExtra("rules","1. Duration : 45 minutes\n2. Only one participant.\n3. Theme will be given on spot\n4. No tracing\n5. No mobile devices allowed");
+            gotoevent.putExtra("rules","1. Duration : 45 minutes\n2. Only one participant.\n3. Theme will be given on spot\n4. No tracing\n5. No mobile devices allowed\n6. Only 2 per college");
             gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","pencilsketch");
         }else if(viewname.equalsIgnoreCase("Collage")){
             gotoevent.putExtra("details","The theme is Indian army.");
             gotoevent.putExtra("timings","2pm 3rd May 2017");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Duration : 45 minutes\n4. News papers only\n5. Carry your own materials\n6. No scissors");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Duration : 45 minutes\n4. News papers only\n5. Carry your own materials\n6. No scissors\n7. Only 2 per college");
             gotoevent.putExtra("fee","Entry fee : Rs 150\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","collage");
         }else if(viewname.equalsIgnoreCase("Face Painting")){
             gotoevent.putExtra("details","Face painting is a fun way to dress up—no costume required ;)");
             gotoevent.putExtra("timings","12pm 3rd May 2017");
-            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Any concept allowed\n3. Get your own paints/brushes\n4. Use only face paints\n5. Bring a volunteer");
+            gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Any concept allowed\n3. Get your own paints/brushes\n4. Use only face paints\n5. Bring a volunteer\n6. Only 2 per college");
             gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","facepainting");
 
         }else if(viewname.equalsIgnoreCase("Cooking without fire")){
-            gotoevent.putExtra("details","Showcase your culinary skills but,\n with a catch. No stove or heating.");
+            gotoevent.putExtra("details","Showcase your culinary skills but with a catch. No stove or heating.");
             gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Only for Sambhram students");
+            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Only for Sambhram Lecturers/Staff");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","cooking");
         }

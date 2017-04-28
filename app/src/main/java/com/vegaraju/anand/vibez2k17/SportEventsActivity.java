@@ -40,38 +40,38 @@ public class SportEventsActivity extends AppCompatActivity {
         gotoevent.putExtra("eventnamee",viewname);
         //
         if (viewname.equalsIgnoreCase("Short Cricket")) {
-            gotoevent.putExtra("details","Cricket with reduced overs and players. ");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nCricket with reduced overs and players. ");
+            gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 7+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","shortcricket");
         }else if(viewname.equalsIgnoreCase("Throwball")){
-            gotoevent.putExtra("details","Catch and throw ball over the net");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nCatch and throw ball over the net");
+            gotoevent.putExtra("timings","Event finished");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 6+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","throwball");
         }else if(viewname.equalsIgnoreCase("Volleyball")){
-            gotoevent.putExtra("details","Volleyball as we know it");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nVolleyball as we know it");
+            gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 6+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","volleyball");
         }else if(viewname.equalsIgnoreCase("Kabbadi")){
-            gotoevent.putExtra("details","Kabaddi like we know");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nKabaddi like we know");
+            gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 7+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","kabaddi");
         }else if(viewname.equalsIgnoreCase("Carrom doubles")){
-            gotoevent.putExtra("details","Carrom (girls)");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nCarrom (girls)");
+            gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","carrom");
         }else if(viewname.equalsIgnoreCase("Badminton doubles")){
-            gotoevent.putExtra("details","Badminton with 2 players in a side.\n(girls only)");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("details","Registrations are closed\nBadminton with 2 players in a side.\n(girls only)");
+            gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","badmintondoubles");

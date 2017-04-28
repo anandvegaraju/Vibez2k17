@@ -24,7 +24,7 @@ public class EventTemplateActivity extends AppCompatActivity {
 
     String phonenumber, eventnamewithspace, eventdetails ,eventfee, eventrules, eventtimings, eventdbname, tmp;
     TextView detail_head, detailstext, rulestext, feetext, timingtext;
-    Button eventregister;
+    Button eventregister, eventcontact;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +49,7 @@ public class EventTemplateActivity extends AppCompatActivity {
         feetext = (TextView)findViewById(R.id.eventfee);
         timingtext = (TextView)findViewById(R.id.eventtimings);
         eventregister = (Button)findViewById(R.id.eventregisterbutton);
+        eventcontact = (Button)findViewById(R.id.eventcontactbutton);
 
         detail_head.setText(eventnamewithspace + " details");
         detailstext.setText(eventdetails);
@@ -81,6 +82,17 @@ public class EventTemplateActivity extends AppCompatActivity {
                                     }
                                 }
                         );
+                    }
+                }
+        );
+
+        eventcontact.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent gotocontacts = new Intent(EventTemplateActivity.this, ContactListActivity.class);
+                        gotocontacts.putExtra("phonenumber",phonenumber);
+                        startActivity(gotocontacts);
                     }
                 }
         );

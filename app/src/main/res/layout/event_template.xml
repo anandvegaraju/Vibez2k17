@@ -164,6 +164,27 @@
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="16dp" />
+            <View
+                android:id="@+id/lineview4"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="10dp"
+                android:background="#c0c0c0"/>
+
+            <Button
+                android:id="@+id/eventcontactbutton"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Contact Coordinator"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+
 
 
 
