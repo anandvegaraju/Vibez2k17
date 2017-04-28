@@ -17,6 +17,7 @@ public class SponsorsScreenActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Sponsors");
 
 
     }

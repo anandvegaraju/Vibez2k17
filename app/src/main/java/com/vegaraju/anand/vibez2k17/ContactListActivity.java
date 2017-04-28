@@ -31,7 +31,14 @@ public class ContactListActivity extends AppCompatActivity {
             "Faculty coordinator(Technical)",
             "Yogananda (Technical",
             "Suhas H(DSLR Photography)",
-            "Charan C (Mobile Photography)"
+            "Charan C (Mobile Photography)",
+            "Sagarika(Mehendi",
+            "Shilpa(Face Painting)",
+            "Anusha(Pencil Sketch)",
+            "Akash(Collage)",
+            "Ragini(Rangoli)",
+            "Harshitha(BeatBoxing)",
+            "Bharath(Dance)"
 
 
 
@@ -50,7 +57,14 @@ public class ContactListActivity extends AppCompatActivity {
             "+919900120619",
             "+918105963010",
             "+918277007008",
-            "+919738640150"
+            "+919738640150",
+            "+917022666160",
+            "+917019653980",
+            "+918861265596",
+            "+918095185157",
+            "+918867994551",
+            "+917795930442",
+            "+918553317570"
     } ;
 
     @Override

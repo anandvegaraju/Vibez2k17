@@ -21,6 +21,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Technical Events");
         Intent i = getIntent();
         phonenumber = i.getStringExtra("phonenumber");
 

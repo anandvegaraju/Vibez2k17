@@ -22,9 +22,10 @@
 
             <Button
                 android:id="@+id/volleyballinterbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#b70e4c"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Group Dance"
@@ -37,9 +38,10 @@
 
             <Button
                 android:id="@+id/solodancebutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#d6510e"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Solo Dance"
@@ -52,9 +54,10 @@
 
             <Button
                 android:id="@+id/groupsongbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#0c4970"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Group Song"
@@ -67,9 +70,10 @@
 
             <Button
                 android:id="@+id/solosongbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#e20417"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Solo song"
@@ -81,25 +85,11 @@
                 tools:layout_editor_absoluteY="176dp" />
 
             <Button
-                android:id="@+id/fusionsong"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="OnClick"
-                android:text="Group song fusion"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="232dp" />
-
-            <Button
                 android:id="@+id/fashionshowbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#dbbf0a"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Fashion show"
@@ -112,138 +102,132 @@
 
             <Button
                 android:id="@+id/rangolibutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#0a4cd1"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Rangoli"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
-                android:textSize="36sp"
 
+                android:textSize="36sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/terriblefilmsbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#6d08d8"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Short Film"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/photographybutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#d83808"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Photography"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/shitboxingbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#bab70e"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Beat boxing"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/mehandi"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#08470d"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Mehandi"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/pencilsketchbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#ba6007"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Pencil Sketch"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 
             <Button
                 android:id="@+id/collage"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ba062a"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Collage"
                 android:textAlignment="center"
-                android:textStyle="bold"
+                android:textColor="@color/tw__solid_white"
                 android:textAllCaps="false"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/facepainting"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#124c0d"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
+                android:textColor="@color/tw__solid_white"
                 android:text="Face Painting"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textSize="36sp"
                 android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/cooking"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="OnClick"
-                android:text="Cooking without fire"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textSize="36sp"
-                android:textStyle="bold" />
+
         </LinearLayout>
     </ScrollView>
 

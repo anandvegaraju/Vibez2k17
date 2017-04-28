@@ -26,6 +26,7 @@ public class CreditsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Credits");
 
         linkedin1 = (ImageButton)findViewById(R.id.linkedin1);
         linkedin2 = (ImageButton)findViewById(R.id.linkedin2);

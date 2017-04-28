@@ -21,6 +21,7 @@ public class SportEventsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Sporting events");
         Intent i = getIntent();
         phonenumber = i.getStringExtra("phonenumber");
 

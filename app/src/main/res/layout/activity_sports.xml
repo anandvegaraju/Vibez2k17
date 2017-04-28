@@ -22,9 +22,10 @@
 
             <Button
                 android:id="@+id/volleyballinterbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#e50b65"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Short Cricket"
@@ -37,9 +38,10 @@
 
             <Button
                 android:id="@+id/throwballbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#0d9de0"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Throwball"
@@ -52,9 +54,10 @@
 
             <Button
                 android:id="@+id/volleyballbutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#dadd08"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Volleyball"
@@ -67,9 +70,10 @@
 
             <Button
                 android:id="@+id/kabaddibutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#e26c04"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Kabbadi"
@@ -82,9 +86,10 @@
 
             <Button
                 android:id="@+id/badmintonsinglebutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#e2041a"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Carrom doubles"
@@ -97,16 +102,16 @@
 
             <Button
                 android:id="@+id/badmintondoublebutton"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
+                android:background="#0d6014"
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Badminton doubles"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />

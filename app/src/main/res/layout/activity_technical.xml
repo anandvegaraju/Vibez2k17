@@ -28,6 +28,7 @@
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="Counter Strike"
+                android:background="#a742f4"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
@@ -45,6 +46,7 @@
                 android:text="Best Manager"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:background="#ce7d1a"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
@@ -58,6 +60,7 @@
                 android:fontFamily="casual"
                 android:onClick="OnClick"
                 android:text="NFS"
+                android:background="#a32110"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
@@ -75,6 +78,7 @@
                 android:text="Pick and Speech"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
+                android:background="#a20f3c"
                 android:textSize="36sp"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="0dp"
@@ -91,7 +95,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
+                android:background="#0d489b"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
@@ -107,7 +111,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
+                android:background="#e5c914"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
@@ -123,7 +127,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
+                android:background="#39ce14"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
@@ -138,7 +142,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
+                android:background="#0be5a7"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
@@ -153,7 +157,7 @@
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-
+                android:background="#e50b65"
                 android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />

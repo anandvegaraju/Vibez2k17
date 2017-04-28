@@ -42,6 +42,7 @@ public class MainMenu extends AppCompatActivity implements View.OnTouchListener{
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Main Menu");
 
         viewPager.setAdapter(viewPagerAdapter);
         Intent intent = getIntent();

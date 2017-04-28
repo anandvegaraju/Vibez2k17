@@ -36,6 +36,7 @@ public class UserRegistrationActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Registration");
 
         // link the form layout to objects
         fullname = (EditText)findViewById(R.id.fullnameField);

@@ -157,7 +157,7 @@
     <TextView
         android:id="@+id/textView8"
         android:layout_width="185dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="75dp"
         android:layout_marginRight="75dp"

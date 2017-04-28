@@ -13,7 +13,7 @@ import android.widget.Button;
 
 public class CulturalEventsActivity extends AppCompatActivity {
     String phonenumber, viewname;
-    Button grpdance, solodance, grpsong, solosong, fusionsong, fashionshow, rangoli, shortfilm, photography, beatboxing, mehandi, pencilsketch, collage, facepainting, cookwofire;
+    Button grpdance, solodance, grpsong, solosong, fashionshow, rangoli, shortfilm, photography, beatboxing, mehandi, pencilsketch, collage, facepainting, cookwofire;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
+        getSupportActionBar().setTitle("Cultural Events");
         Intent i = getIntent();
         phonenumber = i.getStringExtra("phonenumber");
 
@@ -30,7 +31,6 @@ public class CulturalEventsActivity extends AppCompatActivity {
         solodance = (Button)findViewById(R.id.solodancebutton);
         grpsong = (Button)findViewById(R.id.groupsongbutton);
         solosong = (Button)findViewById(R.id.solosongbutton);
-        fusionsong = (Button)findViewById(R.id.fusionsong);
         fashionshow = (Button)findViewById(R.id.fashionshowbutton);
         rangoli = (Button)findViewById(R.id.rangolibutton);
         shortfilm = (Button)findViewById(R.id.terriblefilmsbutton);
@@ -40,8 +40,6 @@ public class CulturalEventsActivity extends AppCompatActivity {
         pencilsketch = (Button)findViewById(R.id.pencilsketchbutton);
         collage = (Button)findViewById(R.id.collage);
         facepainting = (Button)findViewById(R.id.facepainting);
-        cookwofire = (Button)findViewById(R.id.cooking);
-
 
     }
 
@@ -76,12 +74,6 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant.");
             gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
             gotoevent.putExtra("eventname","solosong");
-        }else if(viewname.equalsIgnoreCase("Group song fusion")){
-            gotoevent.putExtra("details","Karaoke");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 8 teammates.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
-            gotoevent.putExtra("eventname","fusionsong");
         }else if(viewname.equalsIgnoreCase("Fashion show")){
             gotoevent.putExtra("details","Duration : 8+2 minutes.");
             gotoevent.putExtra("timings","Evening");
@@ -92,19 +84,19 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","A colorful Indian artform");
             gotoevent.putExtra("timings","10am 3rd May 2017");
             gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Max of 2 teammates.\n3. No chalks allowed\n 4. No salt/rice/flowers\n5. Only pure rangoli colors allowed\n6. No moulds.\n7. Only 2 per college");
-            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 100");
             gotoevent.putExtra("eventname","rangoli");
         }else if(viewname.equalsIgnoreCase("Short Film")){
             gotoevent.putExtra("details","Awaken the talented filmmaker in you .");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Duration : 10+2\n3. No vulgarity or beeps");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : TBA");
             gotoevent.putExtra("eventname","shortfilm");
         }else if(viewname.equalsIgnoreCase("Photography")){
             gotoevent.putExtra("details","Two categories : DSLR and mobile.\nCapture the beauty of the world through lens.\nTopic will be given on spot");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. Only one participant\n2. Image should be in JPEG format\n3. No filters\n4. On spot registration allowed\n5. Theme will be given on spot.\n6. For mobile photography camera should be of min 10mp\n7. No filters\n8. 3 hour event\n9. Judge's decision is final ");
-            gotoevent.putExtra("fee","Entry fee : Contact the coordinator\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Contact the coordinator");
             gotoevent.putExtra("eventname","photography");
         }else if(viewname.equalsIgnoreCase("Beat Boxing")){
             gotoevent.putExtra("details","A form of vocal percussion primarily involving the art of mimicking\n drum machines using one's mouth, lips, tongue, and voice.");
@@ -116,33 +108,27 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","Indian art.");
             gotoevent.putExtra("timings","12pm 3rd May 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates\n3. Duration will be 45 minutes\n4. No Indian/Arabic design\n5. Carry your own mehandi cone.\n6. No black cone\n7. Only 2 per college");
-            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 100");
             gotoevent.putExtra("eventname","mehandi");
         }else if(viewname.equalsIgnoreCase("Pencil Sketch")){
             gotoevent.putExtra("details","Showcase your talent with a pencil.");
             gotoevent.putExtra("timings","10am 3rd May 2017");
             gotoevent.putExtra("rules","1. Duration : 45 minutes\n2. Only one participant.\n3. Theme will be given on spot\n4. No tracing\n5. No mobile devices allowed\n6. Only 2 per college");
-            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 100");
             gotoevent.putExtra("eventname","pencilsketch");
         }else if(viewname.equalsIgnoreCase("Collage")){
             gotoevent.putExtra("details","The theme is Indian army.");
             gotoevent.putExtra("timings","2pm 3rd May 2017");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Duration : 45 minutes\n4. News papers only\n5. Carry your own materials\n6. No scissors\n7. Only 2 per college");
-            gotoevent.putExtra("fee","Entry fee : Rs 150\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 150");
             gotoevent.putExtra("eventname","collage");
         }else if(viewname.equalsIgnoreCase("Face Painting")){
             gotoevent.putExtra("details","Face painting is a fun way to dress up—no costume required ;)");
             gotoevent.putExtra("timings","12pm 3rd May 2017");
             gotoevent.putExtra("rules","1. Duration : 1 hour\n2. Any concept allowed\n3. Get your own paints/brushes\n4. Use only face paints\n5. Bring a volunteer\n6. Only 2 per college");
-            gotoevent.putExtra("fee","Entry fee : Rs 100\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 100");
             gotoevent.putExtra("eventname","facepainting");
 
-        }else if(viewname.equalsIgnoreCase("Cooking without fire")){
-            gotoevent.putExtra("details","Showcase your culinary skills but with a catch. No stove or heating.");
-            gotoevent.putExtra("timings","9am to 1pm");
-            gotoevent.putExtra("rules","1. No foul play\n2. Max of 2 teammates.\n3. Only for Sambhram Lecturers/Staff");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
-            gotoevent.putExtra("eventname","cooking");
         }
 
 

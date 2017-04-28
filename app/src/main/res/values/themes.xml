@@ -7,6 +7,7 @@
         <item name="android:textColorLink">#bc0f17</item>
         <item name="dgts__accentColor">#ffacee</item>
         <item name="colorButtonNormal">#ce6b0f</item>
+
     </style>
 
 </resources>
