@@ -46,36 +46,48 @@ public class SportEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 7+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","shortcricket");
+            gotoevent.putExtra("eventcoordinator","Manu");
+            gotoevent.putExtra("eventcoordinatornum","+918867562618");
         }else if(viewname.equalsIgnoreCase("Throwball")){
             gotoevent.putExtra("details","Registrations are closed\nCatch and throw ball over the net");
             gotoevent.putExtra("timings","Event finished");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 6+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","throwball");
+            gotoevent.putExtra("eventcoordinator","Sagarika");
+            gotoevent.putExtra("eventcoordinatornum","+917022666160");
         }else if(viewname.equalsIgnoreCase("Volleyball")){
             gotoevent.putExtra("details","Registrations are closed\nVolleyball as we know it");
             gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 6+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","volleyball");
+            gotoevent.putExtra("eventcoordinator","Manu");
+            gotoevent.putExtra("eventcoordinatornum","+918867562618");
         }else if(viewname.equalsIgnoreCase("Kabbadi")){
             gotoevent.putExtra("details","Registrations are closed\nKabaddi like we know");
             gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.\n3. 7+3 team members");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","kabaddi");
+            gotoevent.putExtra("eventcoordinator","Manu");
+            gotoevent.putExtra("eventcoordinatornum","+918867562618");
         }else if(viewname.equalsIgnoreCase("Carrom doubles")){
             gotoevent.putExtra("details","Registrations are closed\nCarrom (girls)");
             gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","carrom");
+            gotoevent.putExtra("eventcoordinator","Manu");
+            gotoevent.putExtra("eventcoordinatornum","+918867562618");
         }else if(viewname.equalsIgnoreCase("Badminton doubles")){
             gotoevent.putExtra("details","Registrations are closed\nBadminton with 2 players in a side.\n(girls only)");
             gotoevent.putExtra("timings","Event completed");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","badmintondoubles");
+            gotoevent.putExtra("eventcoordinator","Sagarika");
+            gotoevent.putExtra("eventcoordinatornum","+917022666160");
         }
 
         startActivity(gotoevent);

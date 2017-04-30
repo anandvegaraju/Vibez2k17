@@ -10,7 +10,6 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * Created by Anand on 03-04-2017.
@@ -29,7 +28,6 @@ public class UserRegistrationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         Intent getph = getIntent();
         phonenumber = getph.getStringExtra("phonenumber");
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
 
         setContentView(R.layout.regform_activity);
 

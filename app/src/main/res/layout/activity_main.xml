@@ -25,15 +25,29 @@
         app:srcCompat="@drawable/vibez"
         android:layout_alignParentEnd="true" />
 
+
     <com.digits.sdk.android.DigitsAuthButton
         android:id="@+id/auth_button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/auth_button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
         android:fontFamily="casual"
-        android:textAlignment="center" />
+        android:textAlignment="viewStart"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="casual"
+        android:text="Or"
+        android:textAlignment="textStart"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/auth_button"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

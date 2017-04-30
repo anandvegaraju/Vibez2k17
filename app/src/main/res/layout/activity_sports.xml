@@ -26,13 +26,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#e50b65"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Short Cricket"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="16dp" />
 
@@ -42,13 +41,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#0d9de0"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Throwball"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="128dp" />
 
@@ -58,13 +56,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#dadd08"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Volleyball"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="176dp" />
 
@@ -74,13 +71,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#e26c04"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Kabbadi"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="232dp" />
 
@@ -90,13 +86,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#e2041a"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Carrom doubles"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="288dp" />
 
@@ -106,13 +101,12 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:background="#0d6014"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-smallcaps"
                 android:onClick="OnClick"
                 android:text="Badminton doubles"
                 android:textAllCaps="false"
                 android:textColor="@android:color/white"
                 android:textSize="36sp"
-                android:textStyle="bold"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="342dp" />
 

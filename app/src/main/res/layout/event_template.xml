@@ -2,12 +2,14 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.vegaraju.anand.vibez2k17.EventTemplateActivity"
     android:background="@drawable/bg">
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:fillViewport="true"
@@ -22,10 +24,7 @@
             android:layout_height="fill_parent"
             android:layout_gravity="center_horizontal">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:src="@drawable/vibez" />
+
 
             <TextView
                 android:id="@+id/eventdetailhead"
@@ -170,23 +169,61 @@
                 android:layout_height="2dp"
                 android:layout_marginTop="10dp"
                 android:background="#c0c0c0"/>
-
-            <Button
-                android:id="@+id/eventcontactbutton"
-                style="?android:attr/borderlessButtonStyle"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="280dip"
+                android:layout_height="60dip"
                 android:fontFamily="casual"
-                android:text="Contact Coordinator"
+                android:text="Coordinator"
+                android:textAlignment="viewStart"
                 android:textAllCaps="false"
-                android:textColor="@android:color/holo_green_light"
+                android:textColor="@android:color/white"
                 android:textSize="30sp"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="16dp" />
+                android:textStyle="italic"></TextView>
 
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:outlineProvider="bounds">
 
+                <TableRow>
 
+                    <TextView
+                        android:id="@+id/coordinatornametext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="casual"
+                        android:paddingRight="13dp"
+                        android:text=""
+                        android:textAllCaps="false"
+                        android:textColor="@color/tw__solid_white"
+                        android:textSize="19dp" />
 
+                    <ImageView
+                        android:id="@+id/sendwmsg"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/whatsappicon" />
+
+                    <ImageView
+                        android:id="@+id/callcoordinator"
+                        android:layout_width="57dp"
+                        android:layout_height="50dp"
+                        android:paddingRight="14dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_menu_call" />
+
+                    <ImageView
+                        android:id="@+id/sendmsg"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:src="@android:drawable/ic_dialog_email" />
+                </TableRow>
+
+            </TableLayout>
 
 
 

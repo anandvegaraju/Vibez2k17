@@ -18,53 +18,52 @@ public class ContactListActivity extends AppCompatActivity {
 
     ListView list;
     String[] web = {
-            "App team : Anand",
-            "App team : Bharat",
-            "Coordinator : Manu",
-            "Fest :Prof.Trupthi",
-            "Kushal(Short film)",
-            "Chandru(Short film)",
-            "Uday(Fest)",
-            "Nitin(Cooking)",
-            "Bhuveshwari(Solo dance)",
-            "Bhuveshwari(BeatBoxing)",
-            "Faculty coordinator(Technical)",
-            "Yogananda (Technical",
-            "Suhas H(DSLR Photography)",
-            "Charan C (Mobile Photography)",
-            "Sagarika(Mehendi",
-            "Shilpa(Face Painting)",
-            "Anusha(Pencil Sketch)",
-            "Akash(Collage)",
-            "Ragini(Rangoli)",
-            "Harshitha(BeatBoxing)",
-            "Bharath(Dance)"
+            "App team : Anand", //1
+            "App team : Bharat",//2
+            "Coordinator : Manu",//3
+            "Fest :Prof.Trupthi",//4
+            "Chandru(Short film)",//6
+            "Uday(Fest)",//7
+            "Nitin(Cooking)",//8
+            "Bhuveshwari(Solo dance)",//9
+            "Bhuveshwari(BeatBoxing)",//10
+            "Faculty coordinator(Technical)",//11
+            "Yogananda (Technical",//12
+            "Suhas H(DSLR Photography)",//13
+            "Charan C (Mobile Photography)",//14
+            "Sagarika(Mehendi",//15
+            "Shilpa(Face Painting)",//16
+            "Anusha(Pencil Sketch)",//17
+            "Akash(Collage)",//18
+            "Ragini(Rangoli)",//19
+            "Harshitha(BeatBoxing)",//20
+            "Bharath(Dance)"//21
 
 
 
 
     } ;
     String[] contactlist = {
-            "+919483526746",
-            "+918553502771",
-            "+918867562618",
-            "+919036393116",
-            "+919738586117",
-            "+919980845794",
-            "+919739465976",
-            "+918861604042",
-            "+919900120619",
-            "+919900120619",
-            "+918105963010",
-            "+918277007008",
-            "+919738640150",
-            "+917022666160",
-            "+917019653980",
-            "+918861265596",
-            "+918095185157",
-            "+918867994551",
-            "+917795930442",
-            "+918553317570"
+            "+919483526746", //1
+            "+918553502771", //2
+            "+918867562618",//3
+            "+919036393116",//4
+            "+919738586117",//5
+            "+919980845794",//6
+            "+919739465976",//7
+            "+918861604042",//8
+            "+919900120619",//9
+            "+919900120619",//10
+            "+918105963010",//11
+            "+918277007008",//12
+            "+919738640150",//13
+            "+917022666160",//14
+            "+917019653980",//15
+            "+918861265596",//16
+            "+918095185157",//17
+            "+918867994551",//18
+            "+917795930442",//19
+            "+918553317570"//20
     } ;
 
     @Override
