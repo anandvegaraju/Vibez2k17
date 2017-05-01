@@ -68,7 +68,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventcoordinatornum","+918105963010");
         }else if(viewname.equalsIgnoreCase("Pick and Speak")){
             gotoevent.putExtra("details","Speak about a randomly chosen topic");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","Contact the coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","pickandspeak");
@@ -76,7 +76,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventcoordinatornum","+918105963010");
         }else if(viewname.equalsIgnoreCase("Coding")){
             gotoevent.putExtra("details","You know what it is");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","Contact the coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","coding");
@@ -84,7 +84,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventcoordinatornum","+918105963010");
         }else if(viewname.equalsIgnoreCase("CAED Modelling")){
             gotoevent.putExtra("details","You'll be asked to model 3d or 2d components.");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","Contact the technical coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. Play fairly.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","caedmodelling");
@@ -100,7 +100,7 @@ public class TechnicalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventcoordinatornum","+918105963010");
         }else if(viewname.equalsIgnoreCase("Circuit Debugging")){
             gotoevent.putExtra("details","TBA");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","Contact the coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. No mobile devices allowed.");
             gotoevent.putExtra("fee","Entry fee : NA\n First place : NA\nSecond place : NA");
             gotoevent.putExtra("eventname","cktdbg");

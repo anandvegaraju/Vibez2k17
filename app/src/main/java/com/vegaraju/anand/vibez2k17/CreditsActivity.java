@@ -10,6 +10,10 @@ import android.telephony.PhoneNumberUtils;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
+
 
 /**
  * Created by Anand on 23-04-2017.
@@ -19,6 +23,8 @@ public class CreditsActivity extends AppCompatActivity {
 
     ImageButton linkedin1, linkedin2;
     Intent intent;
+    private AdView mAdView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +33,12 @@ public class CreditsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         getSupportActionBar().setTitle("Credits");
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-9244088228461369/4858268730");
 
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         linkedin1 = (ImageButton)findViewById(R.id.linkedin1);
         linkedin2 = (ImageButton)findViewById(R.id.linkedin2);
 

@@ -70,7 +70,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","It's all about coordination!");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 5 teammates.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Contact the coordinator below");
             gotoevent.putExtra("eventname","groupsong");
             gotoevent.putExtra("eventcoordinator","Bhuvaneshwari");
             gotoevent.putExtra("eventcoordinatornum","+917892369241");
@@ -78,15 +78,15 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","Showcase your talent");
             gotoevent.putExtra("timings","9am to 1pm");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 1 participant.");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Contact the coordinator below");
             gotoevent.putExtra("eventname","solosong");
             gotoevent.putExtra("eventcoordinator","Bhuvaneshwari");
             gotoevent.putExtra("eventcoordinatornum","+917892369241");
         }else if(viewname.equalsIgnoreCase("Fashion show")){
             gotoevent.putExtra("details","Duration : 8+2 minutes.");
-            gotoevent.putExtra("timings","Evening");
+            gotoevent.putExtra("timings","Contact the coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. Max of 10+2 teammates.\n3. One team per college\n4. Theme based\n5. Provide songs in 2 pendrives prior to the event.\n6. No vulgarity allowed\n7. Candidates should remove their own set pieces");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Entry fee : Rs 1500\n First place : Rs 15000");
             gotoevent.putExtra("eventname","fashionshow");
             gotoevent.putExtra("eventcoordinator","Ashmita");
             gotoevent.putExtra("eventcoordinatornum","+917760559392");
@@ -100,7 +100,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("eventcoordinatornum","+918867994551");
         }else if(viewname.equalsIgnoreCase("Short Film")){
             gotoevent.putExtra("details","Awaken the talented filmmaker in you .");
-            gotoevent.putExtra("timings","9am to 1pm");
+            gotoevent.putExtra("timings","Contact the coordinator below");
             gotoevent.putExtra("rules","1. No foul play\n2. Duration : 10+2\n3. No vulgarity or beeps");
             gotoevent.putExtra("fee","Entry fee : TBA");
             gotoevent.putExtra("eventname","shortfilm");
@@ -118,7 +118,7 @@ public class CulturalEventsActivity extends AppCompatActivity {
             gotoevent.putExtra("details","A form of vocal percussion primarily involving the art of mimicking\n drum machines using one's mouth, lips, tongue, and voice.");
             gotoevent.putExtra("timings","6-7 May 2017");
             gotoevent.putExtra("rules","1. One minute showcase\n2. Only one participant\n3. No profanity allowed\n4. No musical instruments");
-            gotoevent.putExtra("fee","Entry fee : TBA\n First place : TBA\nSecond place : TBA");
+            gotoevent.putExtra("fee","Contact the coordinator below");
             gotoevent.putExtra("eventname","beatboxing");
             gotoevent.putExtra("eventcoordinator","Harshitha");
             gotoevent.putExtra("eventcoordinatornum","+917795930442");

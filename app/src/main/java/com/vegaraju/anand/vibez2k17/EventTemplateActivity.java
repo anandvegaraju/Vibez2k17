@@ -13,6 +13,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -30,6 +33,8 @@ public class EventTemplateActivity extends AppCompatActivity {
     TextView detail_head, detailstext, rulestext, feetext, timingtext, coordinatorname;
     Button eventregister;
     ImageView whatsappb, smsb, callb;
+    private AdView mAdView;
+
 
 
 
@@ -42,6 +47,12 @@ public class EventTemplateActivity extends AppCompatActivity {
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
         Intent fromeventlist = getIntent();
         FirebaseDatabase database = FirebaseDatabase.getInstance();
+        MobileAds.initialize(getApplicationContext(), "ca-app-pub-9244088228461369/4858268730");
+
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
         final DatabaseReference eventtnoderef;
         phonenumber = fromeventlist.getStringExtra("phonenumber");
         eventnamewithspace = fromeventlist.getStringExtra("eventnamee");
@@ -68,7 +79,7 @@ public class EventTemplateActivity extends AppCompatActivity {
         detail_head.setText(eventnamewithspace + " details");
         detailstext.setText(eventdetails);
         rulestext.setText(eventrules);
-        feetext.setText(eventtimings);
+        timingtext.setText(eventtimings);
         feetext.setText(eventfee);
 
         eventregister.setOnClickListener(
